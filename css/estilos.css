@@ -1,0 +1,167 @@
+/*=========================================================
+                        VARIABLES
+===========================================================*/
+:root{
+    --bg-white: #ffffff;
+    --bg-black: #1D1C1D;
+    --bg-primario: #EE1D3A;
+    --bg-secundario: #FF3753;
+    --font-principal: 'Lato', sans-serif;
+}
+/*=========================================================
+                        RESET-GLOBAL
+===========================================================*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    font-family: var(--font-principal);
+}
+.container{
+    width: min(95%, 120rem);
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+/*=========================================================
+                        HEADING
+===========================================================*/
+
+
+
+/*=========================================================
+                        UTILIDADES
+===========================================================*/
+.m-0{
+    margin: 0;
+}
+.p-0{
+    padding: 0;
+}
+
+
+/*=========================================================
+                        HEADER
+===========================================================*/
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+.header__imagen{
+    width: min(35%,30rem);
+}
+.header__boton{
+    display: inline-block;
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--bg-primario);
+    color: var(--bg-white);
+    font-weight: 300;
+    box-shadow: inset -8px -5px 11px -5px rgb(0 0 0 / 61%);
+    overflow: hidden;
+    transition: background-color .4s;
+}
+@media(min-width:768px){
+
+}
+.click{
+    color: var(--bg-white);
+    font-weight: 800;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.click a:hover{
+    transform: scale(0.99);
+    opacity: 0.8;
+}
+
+
+/*=========================================================
+                         NAV
+===========================================================*/
+
+@media(min-width:768px){
+    .nav{
+        background-color: var(--bg-secundario);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width:8%;
+        padding: 0.8rem;
+    }
+    .navegacion__mensaje{
+        width: 100%;
+        padding: 0.8rem 0;
+        text-align: center;
+        background-color: var(--bg-primario);
+        color: var(--bg-white);
+        font-weight: 300;
+    }
+    /*===== MENÚ =====*/
+    .men li{
+        position: relative;
+        display: inline-block;
+    }
+    .men li a{
+        display: block;
+        width: 13rem;
+        color: var(--bg-white);
+        padding: 1.2rem 0.5rem;
+        text-align: center;
+        font-weight: 300;
+        margin:0;
+    }
+    .men li a:hover{
+        background-color: var(--bg-primario);
+        border-radius: 0.3rem;
+        transition: all .6s;
+    }
+    .men--mod{
+        margin-right: 0.33rem;
+    }
+    /*===== SUBMENÚ =====*/
+    .submen{
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 2s;
+        background-color: var(--bg-white);
+    }
+    .submen li a{
+        display: block;
+        width: 188px;
+        text-align: initial;
+        color: var(--bg-primario);
+        text-transform: uppercase;
+        font-size: 1.4rem;
+    }
+    .men li:hover .submen{
+        visibility: visible;
+        opacity: 1;
+    }
+    .submen li a:hover{
+        background-color: #eeeeee;
+    }
+}
+
+
+/*=========================================================
+                        FOOTER
+===========================================================*/
