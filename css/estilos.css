@@ -57,7 +57,9 @@ img{
 .header{
     display: none;
 }
-
+.sobrepuesto{
+    z-index: 99;
+}
 .nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -72,14 +74,11 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-        
     
 }
 .logo__imagen{
     width: 40%;
     padding: 0.5rem 0;
-
-
 }
 .menu{
     grid-column: 3 / 4;
