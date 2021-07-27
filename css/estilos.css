@@ -61,11 +61,10 @@ img{
     padding: 0.8rem;
 }
 .logo-menu-responsive{
-    width: 25%;
+    width: 30%;
     padding: 10px 20px;
 }
 .nav{
-    border: 1px solid blue;
     display: grid;
     grid-template-columns: 1fr 6fr;
     background-color: var(--bg-secundario);
@@ -73,33 +72,30 @@ img{
     position: relative;
 }
 .menu{
-    /* border: 3px solid yellow; */
     font-size: 3rem;
     color: var(--bg-white);
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 1rem;
+    z-index: 2;
 }
 .men{
     width: 85%;
     height: 100vh;
     background-color: var(--bg-white);
-    border: 1px solid red;
     position: absolute;
     top: 0;
     box-shadow: inset -8px -5px 11px -5px rgb(0 0 0 / 60%);
-
-    /* display: none; */
+    display: none;
 }
 .men li{
-    border: 0.5px solid rgba(201, 200, 200, 0.336);
+    /* border: 0.5px solid rgba(201, 200, 200, 0.336); */
     padding: 10px 20px;
 }
 .men li a{
-    font-size: 1.5rem;
     font-weight: 300;
-    color:var(--bg-secundario);
+    color:var(--bg-primario);
 }
 .submen li{
     border: none;
@@ -123,13 +119,20 @@ img{
     transform: scale(0.99);
     opacity: 0.8;
 }
+.menu-active{
+    display: block;
+}
 @media(min-width:768px){
     .header{
+        display: initial;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 2rem auto;
+    }
+    .header__imagen{
+        width: 50%;
     }
     .header__boton{
         display: inline-block;
@@ -145,6 +148,26 @@ img{
     .menu{
         display: none;
     }
+    .men{
+        display: initial;
+        position: initial;
+        width: auto;
+        height: initial;
+        box-shadow: none;
+        background-color: var(--bg-secundario);
+    }
+    .men li{
+        padding: 0;
+    }
+    .logo-menu-responsive{
+        display: none;
+    }
+    .navegacion__mensaje{
+        width: 100%;
+        display: block;
+        border: none;
+    }
+
 }
 
 
@@ -154,6 +177,7 @@ img{
 
 @media(min-width:768px){
     .nav{
+        display: block;
         background-color: var(--bg-secundario);
         display: flex;
         flex-wrap: wrap;
