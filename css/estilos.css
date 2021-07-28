@@ -368,7 +368,7 @@ video{
     overflow: hidden;
     transition: background-color .4s;
     margin-top: 2rem;
-    z-index: 4;
+    z-index: 1;
 }
 .banner__boton:hover{
     background-color: #EE1D3A;
