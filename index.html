@@ -8,6 +8,7 @@
     <title>Christraining</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
 
@@ -44,10 +45,13 @@
             <img class="banner__logo" src="img/COLOR2.png" alt="Logo Training">
             <p class="banner__boton">Elige tu plan de entrenamiento<a class="click" id="click" href="#"></a></p>
         </div>
-        <video autoplay loop>
-        <!-- <video onloadeddata="this.muted=true" autoplay loop> -->
-            <source src="video/videoBanner.mp4">
-        </video>
+        <section id="slider">
+            <div class="fondo">
+            <video id="sliderVideo" autoplay muted loop>
+                <source src="video/video1.mp4" type="video/mp4">		
+            </video>
+        </div>
+        </section>
     </div>
     <main>
         <section class="section">
@@ -81,13 +85,33 @@
                     deserunt illum molestiae.</figcaption>
             </figure>
         </article>
+        
+    
+    
+    
     </main>
+
+
     <footer>
-
+        <!-- <section id="slider" >
+            <video id="sliderVideo" autoplay muted loop>
+                <source src="video/video1.mp4" type="video/mp4">		
+            </video> -->
+            <!-- <ul class="navegacion">
+                <li onclick="cargarVideo('video/video1.mp4');">
+                    <img src="img/imagen1.JPG">
+                </li>
+                <li onclick="cargarVideo('video/video2.mp4');">
+                    <img src="img/imagen2.JPG">
+                </li>
+                <li onclick="cargarVideo('video/video3.mp4');">
+                    <img src="img/imagen3.JPG">
+                </li>
+            </ul> -->
+        <!-- </section> -->
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/eventos.js"></script>
-    <script src="js/appFijo.js"></script>
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/eventos.js"></script>
+<script src="js/appFijo.js"></script>
 </html>
