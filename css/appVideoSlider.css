@@ -1,8 +1,8 @@
-* {
+/* * {
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
-}
+} */
 #slider {
 	position: relative;
 	width: 100%;
@@ -10,8 +10,7 @@
 }
 @media(min-width:768px){
 	#slider {
-		height: 80rem;
-		border: 2px solid red;
+		height: 58rem;
 	}	
 }
 #slider video{
@@ -21,12 +20,6 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-}
-@media(min-width:768px){
-	#slider video{
-		border: 2px solid blue;
-		height: 80rem;
-	}
 }
 #slider .navegacion{
 	position: absolute;
