@@ -57,8 +57,8 @@ img{
 .nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
-    position: relative;
+    position: absolute;
+    top: 0;
 }
 /*====================
 -> LOGO
@@ -75,6 +75,8 @@ img{
 .logo__imagen{
     width: 20%;
     padding: 0.5rem 0;
+    z-index: 1;
+    cursor: pointer;
 }
 @media(min-width:576px){
     .logo{
@@ -91,6 +93,8 @@ img{
         padding-right: 0;
         padding-left: 1rem;
         justify-content: flex-start;
+
+        background-color: transparent;
     }
     .logo__imagen{
         width: 25%;
@@ -143,7 +147,7 @@ img{
     top: 0;
     box-shadow: inset -8px -5px 11px -5px rgb(0 0 0 / 60%);
     display: none;
-    z-index: 2;
+    z-index: 3;
 }
 .men li{
     border: 0.5px solid rgba(201, 200, 200, 0.336);
@@ -158,6 +162,7 @@ img{
 #men--mod{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 #icoAngulo{
@@ -181,9 +186,9 @@ img{
         position: initial;
         height: initial;
         box-shadow: none;
-        background-color: var(--bg-secundario);
+        background-color: transparent;
         grid-column: 2 / 4;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -193,7 +198,6 @@ img{
         position: relative;
         display: inline-block;
         padding: 0;
-        width: 18rem;
         border: none;
     }
     #men--mod{
@@ -206,6 +210,8 @@ img{
         line-height: 50px;
         color: var(--bg-white) !important;
         position: relative;
+        opacity: 0.8;
+        padding: 0 1.3rem;
     }
     .men a::before{
         content: "";
@@ -223,9 +229,7 @@ img{
         opacity: 0.8;
     }
     .men a:hover{
-        background-color: var(--bg-primario);
-        border-radius: 0.2rem;
-        transition: all .6s;
+        opacity: 1;    
     }
     /*===== SUBMENÚ =====*/
     .submen{
@@ -242,12 +246,11 @@ img{
     }
     .submen li a{
         display: block;
-        width: 19.9rem;
+        width: 19.99rem;
         text-align: initial;
         color: var(--bg-primario) !important;
         text-transform: uppercase;
         font-size: 1.4rem;
-        padding-left: 0.5rem;
     }
     .men li:hover .submen{
         visibility: visible;
@@ -291,15 +294,14 @@ img{
     font-weight: 300;
     font-size: 1.4rem;
     transition: background-color .5s;
-}
-.navegacion__mensaje:hover{
-    background-color: var(--bg-black-firstChildren-opacity);
+    z-index: 1;
 }
 @media(min-width:768px){
     .navegacion__mensaje{
         width: 100%;
-        display: block;
         border: none;
+        grid-row: 1 / 2;
+        background-color: var(--bg-black-firstChildren-opacity);
     }
 }
 .click{
@@ -311,6 +313,7 @@ img{
 .click a:hover{
     transform: scale(0.99);
     opacity: 0.8;
+    cursor: pointer;
 }
 .menu-active{
     display: block;
@@ -335,14 +338,20 @@ img{
 }
 @media(min-width:768px){
     .banner__logo{
-        width: 20%;
-        margin-top: -5rem;
+        width: 25%;
+        /* margin-top: -5rem; */
     }   
 }
-@media(min-width:992px){
+/* @media(min-width:992px){
     .banner__logo{
         width: 15%;
         margin-top: -20rem;
+    }
+} */
+
+@media(min-width:1200px){
+    .banner__logo{
+        width: 15%;
     }
 }
 .fondo{
@@ -419,10 +428,69 @@ img{
 =============================*/
 .fijo{
     position: fixed;
+    width: 100%;
     top: 0;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     z-index: 1500;
 }
+@media(min-width:768px){
+    .fijo .logo{
+        background-color: var(--bg-secundario);
+        opacity: 0.9;
+    }
+    .fijo .logo__imagen{
+        animation-duration: 5s;
+        animation-name: animLogo;
+        animation-iteration-count: 1;
+    }
+    @keyframes animLogo{
+        from {
+            -webkit-transform: rotate(0deg);
+            transform: rotateY(0deg);
+        }
+        50%{
+            -webkit-transform: rotate(180deg);
+            transform: rotateY(180deg);
+        } to {
+            -webkit-transform: rotate(360deg);
+            transform: rotateY(360deg);
+            }
+    }
+    .fijo .men{
+        grid-row: 1 / 2;
+        background-color: var(--bg-secundario);
+        opacity: 0.9;
+    }
+    .fijo .men li{
+        width: 18rem;
+    }
+    .fijo .men a{
+        opacity: 1;
+    }
+    .fijo .men a:hover{
+        background-color: var(--bg-primario);
+        border-radius: 0.2rem;
+        transition: all .6s;
+        font-weight: 500;
+    }
+    .fijo .submen li a{
+        padding: 0;
+        margin-left:-1rem;
+        padding-left: 0.5rem;
+    }
+    .fijo .submen li a:hover{
+        background-color: #eeeeee;
+    }
+    .fijo .navegacion__mensaje{
+        grid-row: 2 / 3;
+        background-color: var(--bg-black);
+        opacity: 1;
+    }
+    .fijo .navegacion__mensaje:hover{
+        background-color: var(--bg-black-firstChildren-opacity);
+    }
+}
+
 
 /*=============================
 -> FOOTER
