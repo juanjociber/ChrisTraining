@@ -193,33 +193,43 @@ img{
         position: relative;
         display: inline-block;
         padding: 0;
+        width: 18rem;
         border: none;
     }
     #men--mod{
         display: initial;
     }
-    .men li a{
+    .men a{
         display: block;
-        width: 13rem;
-        color: var(--bg-white);
-        padding: 2rem 0.5rem;
         text-align: center;
         font-weight: 300;
-        margin-right: 0.3rem;
+        line-height: 50px;
+        color: var(--bg-white) !important;
+        position: relative;
     }
-@media(min-width:992px){
-    .men li a{
-        font-size: 1.3rem;
+    .men a::before{
+        content: "";
+        background-color: var(--bg-white);
+        position: absolute;
+        left: 30%;
+        top: calc(100% + -12px);
+        width: 40%;
+        height: 2px;
+        opacity: 0;
+        transition: opacity 0.8s;
     }
-}
-    .men li a:hover{
+    .men a.selected::before,
+    .men a:hover::before{
+        opacity: 0.8;
+    }
+    .men a:hover{
         background-color: var(--bg-primario);
         border-radius: 0.2rem;
         transition: all .6s;
     }
     /*===== SUBMENÚ =====*/
     .submen{
-        width: 18rem;
+        width: 20rem;
         position: absolute;
         visibility: hidden;
         opacity: 0;
@@ -232,12 +242,12 @@ img{
     }
     .submen li a{
         display: block;
-        width: 21rem;
+        width: 19.9rem;
         text-align: initial;
-        color: var(--bg-primario);
+        color: var(--bg-primario) !important;
         text-transform: uppercase;
         font-size: 1.4rem;
-        padding: 1.5rem 0.2rem;
+        padding-left: 0.5rem;
     }
     .men li:hover .submen{
         visibility: visible;
@@ -247,6 +257,14 @@ img{
         background-color: #eeeeee;
         font-weight: 500;
         border-radius: 0;
+    }
+    .submen a::before{
+        content: none;
+    }
+}
+@media(min-width:992px){
+    .men li a{
+        font-size: 1.3rem;
     }
 }
 /*======================
@@ -406,6 +424,6 @@ img{
     z-index: 1500;
 }
 
-/*=========================================================
-                        FOOTER
-===========================================================*/
+/*=============================
+-> FOOTER
+===============================*/
