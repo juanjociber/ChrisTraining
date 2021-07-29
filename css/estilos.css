@@ -73,7 +73,7 @@ img{
     padding-right: 4rem;
 }
 .logo__imagen{
-    width: 25%;
+    width: 20%;
     padding: 0.5rem 0;
 }
 @media(min-width:576px){
@@ -81,7 +81,7 @@ img{
         padding-right: 9rem;
     }
     .logo__imagen{
-        width: 15%;
+        width: 18%;
     }
 }
 @media(min-width:768px){
@@ -113,7 +113,8 @@ img{
 ======================*/
 .menu{
     grid-column: 3 / 4;
-    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 300;
     color: var(--bg-white);
     background-color: var(--bg-secundario);
     display: flex;
@@ -122,6 +123,9 @@ img{
     padding: 1rem;
     cursor: pointer;
     z-index: 2;
+}
+.menu i{
+    font-size: 3rem;
 }
 @media(min-width:768px){
     .menu{
