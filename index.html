@@ -7,52 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christraining</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/appVideoSlider.css">
+    <!--ANIMATE_CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/animates.css">
+    <!--ICONOS-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <header>
-        <nav class="nav" id="nav">
-            <div class="logo">
-                <img class="logo__imagen" src="img/NEGATIVO.png" alt="logo">
-            </div>
-            <div class="menu">Menú<i class='bx bx-menu' id="btnMenu"></i></div>
-            <ul class="men">
-                <a href="#"><img class="logo-menu-responsive" src="img/COLOR.png" alt="logo"></a>
-                <li><a href="#" class="selected">Inicio</a></li>
-                <li class="men--mod"><a href="#">Nosotros</a>
-                <li id="men--mod"><a href="#">Entrenamiento</a>
-                    <svg id="icoAngulo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #EE1D3A;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
-                    <ul class="submen">
-                        <li><a href="#">Salud (Move On)</a></li>
-                        <li><a href="#">Deporte (Sport 100)</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Contactenos</a></li>
-            </ul>
-            <div class="navegacion__mensaje" id="navegacion__mensaje">
-                <p>¿Quieres un plan de entrenamiento gratis? Entra:<a class="click" href="#">Aquí</a></p>
-            </div>    
-        </nav>
-        <div id="fijo"></div>
-    </header>
-    <div class="banner" id="banner">
+    <header class="banner" id="banner">
         <div class="banner-fondo">
+            <nav class="nav" id="nav">
+                <div class="logo">
+                    <img class="logo__imagen animate__animated  animate__zoomIn" src="img/NEGATIVO.png" alt="logo">
+                </div>
+                <div class="menu">Menú<i class='bx bx-menu' id="btnMenu"></i></div>
+                <ul class="men">
+                    <a href="#"><img class="logo-menu-responsive" src="img/COLOR.png" alt="logo"></a>
+                    <li><a href="#" class="selected">Inicio</a></li>
+                    <li class="men--mod"><a href="#">Nosotros</a>
+                    <li id="men--mod"><a href="#">Entrenamiento</a>
+                        <svg id="icoAngulo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #EE1D3A;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                        <ul class="submen">
+                            <li><a href="#">Salud (Move On)</a></li>
+                            <li><a href="#">Deporte (Sport 100)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contactenos</a></li>
+                </ul>
+                <div class="navegacion__mensaje" id="navegacion__mensaje">
+                    <p>¿Quieres un plan de entrenamiento gratis? Entra:<a class="click" href="#">Aquí</a></p>
+                </div>    
+            </nav>
+            <div id="fijo"></div>
             <img class="banner__logo" src="img/COLOR2.png" alt="Logo Training">
-            <p class="banner__boton">Elige tu plan de entrenamiento<a class="click" id="click" href="#"></a></p>
+            <p class="banner__boton line-1 anim-typewriter">Elige tu plan de entrenamiento<a class="click" id="click" href="#"></a></p>
         </div>
         <section id="slider">
             <div class="fondo">
-            <video id="sliderVideo" autoplay muted loop>
-                <source src="video/video1.mp4" type="video/mp4">		
-            </video>
-        </div>
+                <video id="sliderVideo" autoplay muted loop>
+                    <source src="video/video1.mp4" type="video/mp4">		
+                </video>
+            </div>
         </section>
-    </div>
+    </header>
     <main>
         <section class="section">
             <h2>Entrena tu vida</h2>

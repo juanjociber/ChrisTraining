@@ -8,11 +8,15 @@ document.addEventListener('DOMContentLoaded',()=>{
 function MenuResponsive(){
     let menu = document.querySelector('#btnMenu')
     let menuContent = document.querySelector('.men')
+    let enlaceVideo = document.querySelector('section .navegacion li')
+    
+    console.log(enlaceVideo)
     let contador = 1
 
     menu.addEventListener('click',function(){
         if(contador == 1){
             menuContent.classList.add('menu-active')
+            
             contador = 0
         }
         else{
@@ -164,3 +168,21 @@ ul.addEventListener('click', function (event){
         }
     }
 });
+
+/**=======================================================
+ *           EVENTO LOGO-IMAGEN
+ =========================================================*/
+ function logoHeader(){
+    const logoImagen = document.querySelector('.logo');
+    const observando = new IntersectionObserver(function(entries){
+        if(entries[0].isIntersecting){
+            logoImagen.classList.add('animate__animated','animate__zoomIn');
+        }
+        else{
+            logoImagen.classList.remove('animate__animated','animate__zoomIn');
+        }
+    });
+    observando.observe(document.querySelector('#fijo'));
+};
+logoHeader();
+
