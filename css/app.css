@@ -452,10 +452,16 @@ img{
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     z-index: 1500;
 }
+.fijo .logo{
+    opacity: 0.9;
+}
+.fijo .menu{
+    opacity: 0.9;
+}
+
 @media(min-width:768px){
     .fijo .logo{
         background-color: var(--bg-secundario);
-        opacity: 0.9;
     }
     .fijo .logo__imagen{
         animation-duration: 5s;
@@ -514,3 +520,107 @@ img{
 /*=============================
 -> FOOTER
 ===============================*/
+.footer{
+    color: var(--bg-white);
+    
+
+}
+.footer-informe{
+    width: 100%;
+    height: 31.99rem;
+    position: relative;
+    background-image: url(../img/fondo-footer.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media(min-width:482px){
+    .footer-informe{
+        height: 34rem;
+    }
+}
+@media(min-width:576px){
+    .footer-informe{
+        height: 38rem;
+    }
+}
+@media(min-width:768px){
+    .footer-informe{
+        height: 23rem;
+    }
+}
+
+.fondo-footer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.89);
+    top: 0;
+    
+}
+.campos-footer{
+    /* background-color: var(--bg-black); */
+    padding: 2rem 0 0 0;
+}
+.logo-footer img{
+    width: 20%;
+    margin-left: 2rem;
+}
+.items-footer{
+    text-align: center;
+    margin-top: 1rem;
+}
+.items li{
+    text-align: left;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+}
+.items li i{
+    font-size: 2.3rem;
+    margin-right: 0.5rem;
+}
+.items li a{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--bg-white);
+}
+.campo-footer:last-of-type{
+    border-top: 1px solid #63636363;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+.copyrigth a{
+    color: var(--bg-white);
+    font-weight: 600;
+}
+@media(min-width:768px){
+    .logo-footer img{
+        width: 30%;
+        margin-left: 0;
+    }
+    .campos-footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .campo-footer:nth-child(1){
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .campo-footer:nth-child(3){
+        grid-column: 1 / 3;
+    }
+    .copyrigth a{
+        font-size: 1.3rem;
+    }
+}
+
+@media(min-width:992px){
+    .logo-footer img{
+        width: 20%;
+    }
+}
