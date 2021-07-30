@@ -46,62 +46,87 @@
             </nav>
             <div id="fijo"></div>
             <img class="banner__logo" src="img/COLOR2.png" alt="Logo Training">
-            <p class="banner__boton line-1 anim-typewriter">Elige tu plan de entrenamiento<a class="click" id="click" href="#"></a></p>
+            <section class="section-boton">
+                <h1 class="banner__boton m-0">Elige tu plan de entrenamiento<a class="click" id="click" href="#"></a></h1>
+            </section>
         </div>
-        <section id="slider">
+        <div id="slider">
             <div class="fondo">
                 <video id="sliderVideo" autoplay muted loop>
                     <source src="video/video1.mp4" type="video/mp4">		
                 </video>
             </div>
-        </section>
+        </div>
     </header>
-    <main>
-        <section class="section">
+    
+    <main class="main container">
+        <section class="section-main">
             <h2>Entrena tu vida</h2>
-            <h3>¿Quienes somos?</h3>
-            <p class="section__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt laboriosam quae
-                dicta,
-                delectus veniam odit rerum, doloremque quos id nesciunt nobis animi harum facere fugiat minima?
+            <div class="entrada__contenido">
+                <p>¿Quienes somos?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt laboriosam quae
+                dicta, delectus veniam odit rerum, doloremque quos id nesciunt nobis animi harum facere fugiat minima?
                 Beatae eligendi ducimus officia!
-            </p>
-            <div class="section-imagen">
-                <img src="img/foto1.jpg" alt="Imagenn_1">
+                </p>
+            </div>
+            <div class="entrada__imagen">
+                    <img src="img/foto1.jpg" alt="Imagen 1">
             </div>
         </section>
-        <section class="section">
+                                            
+        <section class="section-main">
             <h2>Conoce nuestros planes</h2>
-                <figure class="card">
-                    <img class="card__imagen" src="img/foto2.jpg" alt="">
-                    <figcaption class="figure__figcaption">Move On</figcaption>
+            <article class="article-plan">
+                <figure class="figure-plan">
+                    <div class="contenedor__imagen">
+                        <img src="img/foto1.jpg" alt="">
+                    </div>
+                    <figcaption class="figure-plan__figcaption">Move On</figcaption>
                 </figure>
-                <p class="card__comentario">Para salud</p>
+                <p>Para salud</p>
+            </article>
+            <article class="article-plan">
+                <figure class="figure-plan">
+                    <div class="contenedor__imagen">
+                        <img src="img/foto1.jpg" alt="">
+                    </div>
+                    <figcaption class="figure-plan__figcaption">Sport 100</figcaption>
+                </figure>
+                <p>Para deportistas</p>
+            </article>
         </section>
-        <article>
-            <figure class="card-testimonio">
-                <img src="img/persona1.jpg" alt="">
-                <p>Nombre</p><span>Luciana Perez</span>
-                <p>Edad</p><span>20</span>
-                <p>Distrito</p><span>Los Olivos</span>
-                <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum voluptas est veniam. Neque
-                    rem atque dolore ratione amet nam, fugiat, tempora et necessitatibus consequatur odit? Et maiores
-                    deserunt illum molestiae.</figcaption>
-            </figure>
-        </article>
         
-    
-    
-    
-    </main>
-
-
-    <footer class="footer">
-        <section class="section-footer">
-            <h2>Síguenos en @Christraining</h2>
-            <div class="slider-footer">
-
-            </div>
+        <section class="section-main">
+            <h2>Testimonios</h2>
+            <article class="article-testimonio">
+                <figure class="figure-testimonio">
+                    <div class="figure-imagen">
+                        <img src="img/persona1.jpg" alt="">
+                    </div>
+                    <div class="figure-contenido">
+                        <p>Nombre</p><span>Luciana Perez</span>
+                        <p>Edad</p><span>20</span>
+                        <p>Distrito</p><span>Los Olivos</span>
+                    </div>
+                    <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum voluptas est veniam. Neque
+                    rem atque dolore ratione amet nam, fugiat, tempora et necessitatibus consequatur odit? Et maiores
+                    deserunt illum molestiae.
+                    </figcaption>
+                </figure>
+            </article>
         </section>
+        
+        <section class="section-main">
+            <h2>¡Entrena con nosotros!</h2>
+                <img src="img/foto3.jpg" alt="">
+
+        </section>
+        <section class="section-main">
+            <h2>Síguenos en @Christraining</h2>
+                <img src="img/foto1.jpg" alt="">
+        </section>
+    </main>
+    <footer class="footer">
         <div class="footer-informe">
             <div class="fondo-footer">
                 <div class="campos-footer">
@@ -121,7 +146,7 @@
                         </div>
                     </div>
                     <div class="campo-footer container">
-                        <small class="copyrigth">Copyrigth &copy; 2021 Christraining | Diseñado y Desarrollado por: <a class="autor" href="tel:+953659803">Juan J. Huiza</a></small>
+                        <small class="copyrigth">Copyrigth &copy; 2021 Christraining | Diseñado y Desarrollado por: <!--<a class="autor" href="tel:+953659803">Juan J. Huiza</a>--></small>
                     </div>
                 </div>
             </div>
