@@ -99,7 +99,7 @@ p{
         width: 18%;
     }
 }
-@media(min-width:768px){
+@media(min-width:992px){
     .logo{
         grid-column:  1 / 2;
         position: relative;
@@ -159,7 +159,7 @@ p{
 .menu i{
     font-size: 3rem;
 }
-@media(min-width:768px){
+@media(min-width:992px){
     .menu{
         display: none;
     }
@@ -204,7 +204,7 @@ p{
     border: none;
     padding-left: 0;
 }
-@media(min-width:768px){
+@media(min-width:992px){
     #icoAngulo{
         display: none;
     }
@@ -306,7 +306,7 @@ p{
     width: 30%;
     padding: 10px 20px;
 }
-@media(min-width:768px){
+@media(min-width:992px){
     .logo-menu-responsive{
         display: none;
     }
@@ -333,7 +333,7 @@ p{
     text-align: center;
     color: var(--bg-white);
 }
-@media(min-width:768px){
+@media(min-width:992px){
     .navegacion__mensaje{
         width: 100%;
         border: none;
@@ -456,7 +456,7 @@ p{
     }
 }
 .section-boton{
-    width: 70%;
+    width: 80%;
     z-index: 1;
     margin-top: 2rem;
 }
