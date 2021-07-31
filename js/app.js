@@ -171,3 +171,11 @@ ul.addEventListener('click', function (event){
 });
 
 
+    defineSizes();
+
+function defineSizes(){
+    const container = document.querySelectorAll('.contenedor-testimonios .slide-testimonio')
+    container.forEach(element => {
+        element.style.border = '2px solid blue'
+    });
+}
