@@ -170,3 +170,9 @@ ul.addEventListener('click', function (event){
     }
 });
 
+/*=====================================
+-> SLIDERS: SIGUENOS EN CHRISTRAINING
+=======================================*/
+
+
+
