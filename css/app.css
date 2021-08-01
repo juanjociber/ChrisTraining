@@ -41,18 +41,18 @@ img{
                         HEADING
 ===========================================================*/
 h2{
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
     color: var(--bg-black-firstChildren);
     padding: 1.5rem 0;
 }
-/* @media(min-width:768px){
+@media(min-width:768px){
     h2{
         font-size: 3rem;
     }
-} */
+}
 p{
     font-size: 1.6rem;
     font-weight: 400;
@@ -662,32 +662,11 @@ p{
     color: var(--bg-black-firstChildren-opacity);
 }
 /* -> SECTION-MAIN 4: FORMULARIO */
-.parallax-formulario{
-    width: 100%;
-    height:50rem;
-    background-image: url(../img/banner.jpg); 
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-}
-.fondo-parallax__formulario{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(29, 29, 29, 0.767);
-    top:0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .formulario{
     width: 40rem;
     border-radius: 0.5rem;
     padding: 2rem 1rem;
-    background: #0e111360;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     font-family: var(--font-principal);
 }
 @media(min-width:576px){
@@ -735,12 +714,14 @@ p{
     color: var(--blue-primario);
     font-weight: 300;
     border-radius: 0.3rem;
+    border: 1px solid rgba(35, 101, 155, 0.13);
 }
 .formulario input[type="text"],.input-text__email,input[type="tel"],textarea{
     width: 100%;
-    background: rgba(229, 230, 231, 0.658);
+    background: rgba(229, 230, 231, 0.479);
+    /* background-image: linear-gradient(to top, #f1f1f1 0%, white 100%); */
     outline: none;
-    border: none;
+    border: 1px solid rgba(35, 101, 155, 0.075);
     color: rgba(23, 25, 27, 0.877);
     font-weight: 300;
     font-size: 1.4;
