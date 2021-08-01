@@ -8,7 +8,8 @@
     --bg-black-firstChildren-opacity:#414141;
     --bg-primario: #EE1D3A;
     --bg-secundario: #FF3753;
-    --font-principal: 'Roboto', sans-serif;
+    --font-parrafo: 'Raleway', sans-serif;
+    --font-principal: 'Montserrat', sans-serif;
 }
 /*=========================================================
                         RESET-GLOBAL
@@ -40,21 +41,21 @@ img{
                         HEADING
 ===========================================================*/
 h2{
-    font-size: 2.2rem;
-    font-weight: 800;
+    font-size: 3rem;
+    font-weight: 900;
     text-transform: uppercase;
     text-align: center;
     color: var(--bg-black-firstChildren);
     padding: 1.5rem 0;
 }
-@media(min-width:768px){
+/* @media(min-width:768px){
     h2{
         font-size: 3rem;
     }
-}
+} */
 p{
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.6rem;
+    font-weight: 400;
     color: var(--bg-black-firstChildren);
     text-align: justify;
 }
@@ -631,15 +632,17 @@ p{
     padding: 1rem 1.5rem 0 6rem;
     margin-bottom: 1rem;
 }
-.figure-contenido p:first-child{
+.figure-contenido p{
     color: var(--bg-black-firstChildren);
-    font-weight: 900;
+    font-weight: 800;
     text-transform: uppercase;
 }
-.figure-contenido p:last-child{
-    color: var(--bg-black-firstChildren-opacity);
-    font-weight: 400;
+.figure-contenido p span{
+    font-weight: 500;
+    text-transform: none;
 }
+
+
 .figure-testimonio__figcaption{
     font-weight: 300;
     padding: 1rem 6rem;
