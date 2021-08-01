@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christraining</title>
+  
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/appVideoSlider.css">
@@ -18,11 +19,8 @@
     <!--ICONOS-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!--FONTS-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -76,7 +74,7 @@
                 </p>
             </div>
             <div class="entrada__imagen">
-                    <img src="img/foto1.jpg" alt="Imagen 1">
+                    <img src="img/6.jpg" alt="Imagen 1">
             </div>
         </section>
                                             
@@ -182,15 +180,15 @@
 
                                 <div class="campo">
                                     <select name="opciones" id="" class="select-text">
-                                        <option value="0">--Selecciones--</option>
-                                        <option value="1">Salud (Move on)</option>
-                                        <option value="2">Deportista (Sport 100)</option>
+                                        <option class="opcion" value="0">Seleccione un opción</option>
+                                        <option class="opcion" value="1">Salud (Move on)</option>
+                                        <option class="opcion" value="2">Deportista (Sport 100)</option>
                                     </select>
                                 </div>
                             </div>
     
-                            <div class="boton-footer boton-footer--mod">
-                                <input class="btn-footer__input btn-footer__input--mod" type="submit" name="message" value="Enviar" title="Click para Enviar Consulta">
+                            <div class="boton-formulario">
+                                <input class="btn btn--mod" type="submit" name="envio" value="Enviar">
                             </div>
                         </form>
                 </div>
@@ -198,7 +196,18 @@
 
         <section class="section-main">
             <h2>Síguenos en @Christraining</h2>
-                <img src="img/foto1.jpg" alt="">
+            <div class="sliders">
+                <div class="sliders-contenedor">
+                    <ul class="sliders-items">
+                        <li class="slider-item"><img src="img/1.JPG" alt=""></li>
+                        <li class="slider-item"><img src="img/2.JPG" alt=""></li>
+                        <li class="slider-item"><img src="img/3.JPG" alt=""></li>
+                        <li class="slider-item"><img src="img/4.JPG" alt=""></li>
+                        <li class="slider-item"><img src="img/5.JPG" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            
         </section>
     </main>
 
@@ -230,10 +239,15 @@
         </div>
     </footer>
 </body>
+
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+
 <!-- JS -->
 <script src="js/app.js"></script>
 <script src="js/appFijo.js"></script>
