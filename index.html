@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/appVideoSlider.css">
+    <link rel="stylesheet" href="css/glider.css">
     <link rel="stylesheet" href="css/slider.css"/>
-    
+        
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!--ANIMATE_CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -21,6 +22,7 @@
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -65,20 +67,6 @@
     
     <main class="main container">
         <section class="section-main">
-            <h2>Entrena tu vida</h2>
-            <div class="entrada__contenido">
-                <p>¿Quienes somos?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt laboriosam quae
-                dicta, delectus veniam odit rerum, doloremque quos id nesciunt nobis animi harum facere fugiat minima?
-                Beatae eligendi ducimus officia!
-                </p>
-            </div>
-            <div class="entrada__imagen">
-                    <img src="img/6.jpg" alt="Imagen 1">
-            </div>
-        </section>
-                                            
-        <section class="section-main">
             <h2>Conoce nuestros planes</h2>
             <article class="article-plan">
                 <figure class="figure-plan">
@@ -100,6 +88,20 @@
             </article>
         </section>
         
+        <section class="section-main">
+            <h2>Entrena tu vida</h2>
+            <div class="entrada__contenido">
+                <p>¿Quienes somos?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt laboriosam quae
+                dicta, delectus veniam odit rerum, doloremque quos id nesciunt nobis animi harum facere fugiat minima?
+                Beatae eligendi ducimus officia!
+                </p>
+            </div>
+            <div class="entrada__imagen">
+                    <img src="img/6.jpg" alt="Imagen 1">
+            </div>
+        </section>
+                                            
         <section class="section-main">
             <h2>Testimonios</h2>
             <div class="swiper-container mySwiper">
@@ -195,44 +197,54 @@
         </section>
 
         <section class="section-main">
-            <h2>Síguenos en @Christraining</h2>
-            <div id="carrusel">
-                <a href="#" class="left-arrow"><i class='bx bx-chevron-left-circle' ></i></a>
-                <a href="#" class="right-arrow"><i class='bx bx-chevron-right-circle'></i></a>
-                <div class="carrusel">
-                    <div class="deporte" id="deporte_0">
-                        <img class="deporte__imagen" src="img/1.JPG" alt="imagen-deporte">
-                        <h4>Lorem ipsum 1</h4>
+            <h2>Síguenos en <span>@Christraining</span></h2>
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="Anterior" class="carousel__anterior">
+                        <i class='bx bxs-chevron-left'></i>
+                    </button>
+    
+                    <div class="carousel__lista">
+                        <div class="carousel__elemento">
+                            <img src="img/1.jpg" alt="Deporte 1">
+                            <p>Perfil 1</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="img/2.jpg" alt="Deporte 2">
+                            <p>Perfil 2</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="img/3.jpg" alt="Deporte 3">
+                            <p>Perfil 3</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="img/4.jpg" alt="Deporte 4">
+                            <p>Perfil 4</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="img/5.jpg" alt="Deporte 5">
+                            <p>Perfil 5</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="img/4.jpg" alt="Deporte 6">
+                            <p>Perfil 6</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="img/3.jpg" alt="Deporte 7">
+                            <p>Perfil 7</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="img/5.jpg" alt="Deporte 8">
+                            <p>Perfil 8</p>
+                        </div>
                     </div>
-                    <div class="deporte" id="deporte_1">
-                        <img class="deporte__imagen" src="img/2.JPG" alt="imagen-deporte">
-                        <h4>Lorem ipsum 2</h4>
-                    </div>
-                    <div class="deporte" id="deporte_2">
-                        <img class="deporte__imagen" src="img/3.JPG" alt="imagen-deporte">
-                        <h4>Lorem ipsum 3</h4>
-                    </div>
-                    <div class="deporte" id="deporte_3">
-                        <img class="deporte__imagen" src="img/4.JPG" alt="imagen-deporte">
-                        <h4>Lorem ipsum 4</h4>
-                    </div>
-                    <div class="deporte" id="deporte_4">
-                        <img class="deporte__imagen" src="img/5.JPG" alt="imagen-deporte">
-                        <h4>Lorem ipsum 5</h4>
-                    </div>
-                    <div class="deporte" id="deporte_5">
-                        <img class="deporte__imagen" src="img/2.JPG" alt="imagen-deporte">
-                        <h4>Lorem ipsum 6</h4>
-                    </div>
-                    <div class="deporte" id="deporte_6">
-                        <img class="deporte__imagen" src="img/3.JPG" alt="imagen-deporte">
-                        <h4>Lorem ipsum 7</h4>
-                    </div>
-                    <div class="deporte" id="deporte_7">
-                        <img class="deporte__imagen" src="img/4.JPG" alt="imagen-deporte">
-                        <h4>Lorem ipsum 8</h4>
-                    </div>
+    
+                    <button aria-label="Siguiente" class="carousel__siguiente">
+                        <i class='bx bxs-chevron-right'></i>
+                    </button>
                 </div>
+    
+                <div role="tablist" class="carousel__indicadores"></div>
             </div>
         </section>
     </main>
@@ -271,10 +283,9 @@
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <!-- JS -->
+<script src="js/glider.js"></script>
 <script src="js/app.js"></script>
 <script src="js/appFijo.js"></script>
 <script src="js/slider.js"> </script> 
