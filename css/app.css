@@ -46,7 +46,7 @@ h2{
     text-transform: uppercase;
     text-align: center;
     color: var(--bg-black-firstChildren);
-    padding: 1.5rem 0;
+    padding: 6rem 0 3rem 0;
 }
 @media(min-width:768px){
     h2{
@@ -821,9 +821,6 @@ p{
 .section-main:nth-child(5) h2 span{
     text-transform: lowercase;
 }
-.carousel{
-    border: 1px solid red;
-}
 .carousel__contenedor {
 	position: relative;
 }
@@ -843,50 +840,62 @@ p{
 	color: #fff;
 	opacity: 20%;
 }
-
 .carousel__anterior:hover,
 .carousel__siguiente:hover {
 	opacity: 100%;
 }
-
 .carousel__anterior {
-	left: -30px;
+	left: -5px;
+    z-index: 2;
 }
-
 .carousel__siguiente {
-	right: -30px;
+	right: -5px;
 }
-.carousel__siguiente i{
-    color: grey;   
+.carousel__anterior i,.carousel__siguiente i{
+	color: var(--bg-white);
+    font-size: 3rem;
 }
-
+@media(min-width:768px){
+    .carousel__anterior{
+        left: -20px;
+    }.carousel__siguiente{
+        right: -20px;
+    }
+    .carousel__anterior i,.carousel__siguiente i{
+        color: var(--bg-black-firstChildren-opacity);
+        font-size: 3rem;
+    }
+}
 .carousel__lista {
 	overflow: hidden;
 }
-
-.carousel__elemento {
+.carousel__elemento{
+    margin: 0 0.2rem;
+}
+.carousel__elemento img{
+    width: 100%;
+}
+.carousel__elemento p {
 	text-align: center;
 }
-
+.carousel__indicadores{
+    margin: 1rem auto;
+}
 .carousel__indicadores .glider-dot {
 	display: block;
 	width: 30px;
 	height: 4px;
-	background: var(--bg-black-firstChildren-opacity);
 	opacity: .2;
 	border-radius: 0;
+    border: 2px solid rgba(255, 99, 71, 0.363);
 }
-
 .carousel__indicadores .glider-dot:hover {
 	opacity: .5;
 }
-
 .carousel__indicadores .glider-dot.active {
 	opacity: 1;
     background-color: var(--bg-black-firstChildren);
 }
-
-
 
 /*=============================
 -> FOOTER
