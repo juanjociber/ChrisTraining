@@ -173,51 +173,32 @@ ul.addEventListener('click', function (event){
 /*=====================================
 -> CARRUSEL: SIGUENOS EN CHRISTRAINING
 =======================================*/
-let current = 0;
-const imagenesCarrusel = new Array();
- 
-$(document).ready(function() {
-    let numImages = 6;
-    if (numImages <= 3) {
-        $('.right-arrow').css('display', 'none');
-        $('.left-arrow').css('display', 'none');
-    }
- 
-    $('.left-arrow').on('click',function() {
-        if (current > 0) {
-            current = current - 1;
-        } else {
-            current = numImages - 3;
-        }
- 
-        $(".carrusel").animate({"left": -($('#deporte_'+current).position().left)}, 600);
- 
-        return false;
-    });
- 
-    $('.left-arrow').on('hover', function() {
-        $(this).css('opacity','0.5');
-    }, function() {
-        $(this).css('opacity','1');
-    });
- 
-    $('.right-arrow').on('hover', function() {
-        $(this).css('opacity','0.5');
-    }, function() {
-        $(this).css('opacity','1');
-    });
- 
-    $('.right-arrow').on('click', function() {
-        if (numImages > current + 3) {
-            current = current+1;
-        } else {
-            current = 0;
-        }
- 
-        $(".carrusel").animate({"left": -($('#deporte_'+current).position().left)}, 600);
- 
-        return false;
-    }); 
- });
-
-
+window.addEventListener('load', function(){
+	new Glider(document.querySelector('.carousel__lista'), {
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: '.carousel__indicadores',
+		arrows: {
+			prev: '.carousel__anterior',
+			next: '.carousel__siguiente'
+		},
+		responsive: [
+			{
+			  // Pantallas >= 775px
+			  breakpoint: 450,
+			  settings: {
+				// Ajusta el elemento a la ventana gráfica
+				slidesToShow: 2,
+				slidesToScroll: 2
+			  }
+			},{
+			  // Pantallas >= 1024px
+			  breakpoint: 800,
+			  settings: {
+				slidesToShow: 4,
+				slidesToScroll: 4
+			  }
+			}
+		]
+	});
+});
