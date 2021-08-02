@@ -46,12 +46,33 @@ h2{
     text-transform: uppercase;
     text-align: center;
     color: var(--bg-black-firstChildren);
-    padding: 6rem 0 3rem 0;
+    padding-bottom: 1.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+h2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15%;
+    height: 2.5px;
+    bottom: 0px;
+    left: 170px;
+    top: calc(100% + -10px);
+    background-color: #636262;
+    transition: all .4s;
 }
 @media(min-width:768px){
     h2{
         font-size: 3rem;
     }
+}
+h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.3rem 0;
 }
 p{
     font-size: 1.6rem;
@@ -514,6 +535,9 @@ p{
 /*=============================
 -> MAIN
 ===============================*/
+.section-main{
+    margin-top: 5rem;
+}
 /* -> SECTION-MAIN 1: PLANES */
 .article-plan{
     box-shadow: 0px 10px 13px -7px #161616, 5px 5px 15px 5px rgba(0,0,0,0);
