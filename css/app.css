@@ -410,9 +410,9 @@ p{
 .menu-active{
     display: block;
 }
-/*============================
+/*=======================================================================
 -> BANNER
-==============================*/
+=========================================================================*/
 .banner{
     width: 100%;
     height: auto;
@@ -484,6 +484,22 @@ p{
         background-color: #ff3752ab;
     }
 }
+
+/*===========================
+-> PÁGINA: NOSOTROS
+=============================*/
+.banner--mod{
+    height: 60rem;
+}
+.banner--mod{
+    background-image: url(../img/banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 /*===========================
 -> FIJO
 =============================*/
