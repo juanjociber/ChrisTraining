@@ -1,0 +1,21 @@
+.bxs-chevron-up{
+    font-size: 30px;
+}
+.ir-arriba{
+    display: none;
+    padding: 13px;
+    background: tomato;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 888;
+    opacity: 0.6;
+    border-radius: 20%;
+    box-shadow: inset -8px -5px 11px -5px rgb(0 0 0 / 61%);;
+}
+.ir-arriba:hover{
+    transform: scale(0.95);
+    opacity: 0.9;
+}
