@@ -129,7 +129,50 @@ function cargarVideo(url){
         })
     });
  
+/**=======================================================
+    *              ANIMACIONES A ELEMENTOS
+=========================================================*/
+window.sr = ScrollReveal();
+    sr.reveal('.nav',{
+        duration : 3000,
+        origin: 'bottom',
+        distance: '-100px'
+    });
 
+    sr.reveal('.scroll-banner',{
+        duration : 3000,
+        origin: 'bottom',
+        distance: '-100px'
+    });
 
+    sr.reveal('.scroll-plan',{
+        duration : 3000,
+        origin: 'top',
+        distance: '400px'
+    });
 
+    sr.reveal('.scroll-entrena',{
+        duration : 4000,
+        origin: 'rigth',
+        distance: '400px'
+    });
+
+    sr.reveal('.scroll-testimonio',{
+        duration : 4000,
+        origin: 'bottom',
+        distance: '400px'
+    });
+    sr.reveal('.scroll-cultura',{
+        duration : 4000,
+        origin: 'bottom',
+        distance: '400px'
+    });
+
+    sr.reveal('.scroll-formulario',{
+        duration : 4000,
+        distance: '0px',
+        easing: 'cubic-bezier(0.5,0,0,1)'
+        // origin: 'bottom',
+        // distance: '400px'
+    });
 
