@@ -16,25 +16,37 @@
     <link rel="shortcut icon" href="img/COLOR.ico" type="image/x-icon">
 
     <!--FONTS-->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/appVideoSlider.css">
     <link rel="stylesheet" href="css/slider.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-    <!-- <link rel="stylesheet" href="css/glider.css"> -->
+    <link rel="stylesheet" href="css/whatsApp.css">
     <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
+    <!--Logo de whatsApp-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=51935233669&text=Hola!%20Díganos%20en%20que%20podemos%20ayudarlo(a)."
+        rel="noopener" class="float" target="_blank">
+        <picture>
+            <source srcset="./img/whatsapp.webp" type="image/webp">
+            <img loading="lazy" src="./img/whatsapp.svg" alt="" title="WhatsApp">
+        </picture>
+    </a>
+    <!--Botón Arriba-->
+    <span class="ir-arriba bx bxs-chevron-up"></span>
+
     <header class="banner banner--mod" id="banner">
         <div class="banner-fondo banner-fondo--mod">
             <nav class="nav" id="nav">
                 <div class="logo">
-                    <img class="logo__imagen" src="img/NEGATIVO.png" alt="logo">
+                    <a href="index.html"><img class="logo__imagen" src="img/NEGATIVO.png" alt="logo"></a>
                 </div>
                 <div class="menu">Menú<i class='bx bx-menu' id="btnMenu"></i></div>
                 <ul class="men">
@@ -65,58 +77,75 @@
             </section>
         </div>
     </header>
-    <main class="main contenedor">
+    <main class="main">
         
-        <section class="section-main section-nosotros" style="margin-top: 3rem;">
+        <section class="section-main contenedor section-main--mod" style="margin-top: 3rem;">
             <h3>Siempre se puede ser mejor</h3>
             <h2>Entrena tu vida</h2>
-                <div class="entrada__contenido entrada__contenido--mod">
+                <div class="entrada__contenido">
                     <p>¿Quiénes somos?</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt laboriosam quae
                         dicta, delectus veniam odit rerum, doloremque quos id nesciunt nobis animi harum facere fugiat
                         minima?
                         Beatae eligendi ducimus officia!
                     </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt laboriosam quae
+                        dicta, delectus veniam odit rerum, doloremque quos id nesciunt nobis animi harum facere fugiat
+                        minima?
+                        Beatae eligendi ducimus officia!
+                    </p>
                 </div>
-                <div class="entrada__imagen entrada__imagen--mod">
-                    <img style="border-radius: 0.5rem;" src="img/foto1.jpg" alt="Imagen 1">
+                <div class="entrada__imagen">
+                    <img src="img/foto1.jpg" alt="Imagen 1">
                 </div>
         </section>
         
         <div class="contenedor-child">
-            <section class="section-nosotros-child">
-                <h4>Misión</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo expedita eaque provident sint ex
-                    repellat sed incidunt quaerat officia, debitis quasi, recusandae, magnam ut beatae aliquid at vel
-                    aspernatur sapiente!</p>
-            </section>
-            <section class="section-nosotros-child">
-                <h4>Visión</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo expedita eaque provident sint ex
-                    repellat sed incidunt quaerat officia, debitis quasi, recusandae, magnam ut beatae aliquid at vel
-                    aspernatur sapiente!</p>
-            </section>
+            <div class="contenedor-child__fondo contenedor-mision-vision">
+                <section class="section-nosotros-child">
+                    <h4>Misión</h4>
+                    <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo expedita eaque provident sint ex
+                        repellat sed incidunt quaerat officia, debitis quasi, recusandae, magnam ut beatae aliquid at vel
+                        aspernatur sapiente!."</p>
+                </section>
+                <section class="section-nosotros-child">
+                    <h4>Visión</h4>
+                    <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo expedita eaque provident sint ex
+                        repellat sed incidunt quaerat officia, debitis quasi, recusandae, magnam ut beatae aliquid at vel
+                        aspernatur sapiente!."</p>
+                </section>
+            </div>
         </div>
-        <section class="section-cultural m-top-50">
+        
+        <section class="section-cultural contenedor m-top-50">
             <h3>No limites tus desafios, desafía tus límites</h3>
             <h2>La cultura christraining</h2>
-            <img src="img/6.jpg" style="border-radius: 0.5rem;" alt="imagen">
-            <p class="m-y-4" style="line-height: 1.5;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo expedita eaque provident sint ex
+            <div class="contenedor-imagen">
+                <img src="img/6.jpg" alt="imagen">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo expedita eaque provident sint ex
                 repellat sed incidunt quaerat officia, debitis quasi, recusandae, magnam ut beatae aliquid at vel
-                aspernatur sapiente!</p>
-        </section>
-        <section class="section-nosotros-child">
-            <h4>Nuestros valores</h4>
-            <p class="m-y-b-2" style="line-height: 1.5;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo expedita eaque provident sint ex
+                aspernatur sapiente!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo expedita eaque provident sint ex
                 repellat sed incidunt quaerat officia, debitis quasi, recusandae, magnam ut beatae aliquid at vel
                 aspernatur sapiente!</p>
         </section>
         
-        <div class="btn-nosotros btn-nosotros--mod">
+        <div class="contenedor-child contenedor-child--mod">
+            <div class="contenedor-child__fondo">
+                <section class="section-nosotros-child section-nosotros-child--mod">
+                    <h4>Nuestros valores</h4>
+                    <p style="line-height: 1.5;">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo expedita eaque provident sint ex
+                    repellat sed incidunt quaerat officia, debitis quasi, recusandae, magnam ut beatae aliquid at vel
+                    aspernatur sapiente!"</p>
+                </section>
+            </div>
+        </div>
+   
+        <div class="btn-nosotros btn-nosotros--mod contenedor">
             <p>Empieza a entrenar: <a class="click-nosotros" href="#">Aquí</a></p>
         </div>
         
-        <section class="section-main">
+        <section class="section-main contenedor">
             <h3>No lo llames sueño, llámalo plan</h3>
             <h2>Síguenos en <span style="text-transform: lowercase;">@Christraining</span></h2>
             <div class="carousel">
