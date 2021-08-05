@@ -11,6 +11,9 @@
     --font-parrafo: 'Raleway', sans-serif;
     --font-principal: 'Roboto', sans-serif;
     --bg-amarillo: #ffc400;
+
+    --animate-duration: 800ms;
+    --animate-delay: 2s;
 }
 /*=========================================================
                         RESET-GLOBAL
@@ -676,74 +679,8 @@ p{
     }
 }
 /* -> SECTION-MAIN 2: ENTRENA TU VIDA */
-.entrada__contenido{
-    line-height: 1.5;
-    padding: 0rem 0 1rem 0;
-}
-.entrada__contenido p:first-child{
-    font-size: 1.7rem;
-    font-weight: 700;
-    padding-bottom: 0.5rem;
-    color: var(--bg-black-firstChildren-opacity)
-}
-.entrada__imagen{
-    overflow: hidden;
-    margin: 2rem 0 1rem 0;
-    border-radius: 0.5rem;
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-.entrada__imagen img{
-    transform: scale(1.03);
-    transition: all ease-in-out .6s;
-}
-.entrada__imagen img:hover{
-    transform: scale(1.2);
-}
-@media(min-width:768px){
-    .section-main:nth-child(2){
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        column-gap: 4rem;
-        padding: 2rem 0;
-    }
-    .section-main:nth-child(2) h3{
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-        padding-top: 0;
-    }
-    .section-main:nth-child(2) h2{
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
-        padding-top: 0;
-    }
-    .entrada__contenido{
-        grid-column: 2 / 3;
-        padding: 1.5rem;
-    }
-    .entrada__imagen{
-        grid-column: 1 / 2;
-        grid-row:  3 / 4;
-        
-    }
-}
-/* @media(min-width:992px){
-    .section-main:nth-child(2){
-        grid-template-columns: 1fr 2fr;
-    }
 
-} */
-@media(min-width:1200px){
-    .section-main:nth-child(2){
-        grid-template-columns: 2fr 1.2fr;
-        column-gap: 10rem;
-    }
-    .entrada__contenido{
-        grid-column: 1 / 2;
-    }
-    .entrada__imagen{
-        grid-column: 2 / 3;
-    }
-}
+
 /* -> SECTION-MAIN 3 : TESTIMONIOS */
 .figure-testimonio{
     display: flex;
@@ -1256,11 +1193,26 @@ p{
 -> PÁGINA: NOSOTROS
 =============================*/
 .banner--mod{
-    height: 8.2rem;
+    height: 21vw;
+}
+@media(min-width:400px){
+    .banner--mod{
+        height: 8.5rem;
+    }    
 }
 @media(min-width:482px){
     .banner--mod{
-        height: 9rem;
+        height: 9.3rem;
+    }    
+}
+@media(min-width:550px){
+    .banner--mod{
+        height: 9.9rem;
+    }    
+}
+@media(min-width:576px){
+    .banner--mod{
+        height: 9.3rem;
     }    
 }
 .banner__logo--mod,.section-boton--mod{
@@ -1287,9 +1239,65 @@ p{
         height: 60rem;
     }
 }
-@media(min-width:576px){
-    .entrada__imagen{
-        margin-bottom: 4rem;
+.section-entrena{
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+.box__contenido p:first-child{
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    color: var(--bg-black-firstChildren-opacity)
+}
+.box__contenido p:last-child{
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.box__imagen{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.box__imagen img{
+    width: 100%;
+    height: auto;
+    transition: all ease-in-out .4s;
+}
+.box__imagen img:hover{
+    transform: scale(1.09);
+}
+@media(min-width:768px){
+    .section-entrena{
+        display: grid;
+        grid-template-columns: 1fr 1.3fr;
+        column-gap: 8rem;
+    }
+    .section-entrena h3,
+    .section-entrena h2{
+        grid-column:  1 / 3;
+    }
+    .section-entrena h2{
+        margin-bottom: 3rem;
+    }
+    .box__contenido{
+        grid-column: 2 / 3;
+    }
+    .section-entrena .box__contenido p{
+        margin: 0;
+    }
+    .box__imagen{
+        grid-row: 3 / 4;
+    }
+}
+@media(min-width:992px){
+    .section-entrena{
+        grid-template-columns: 1.4fr 2fr;
+        column-gap: 12rem;
     }
 }
 .contenedor-child{
@@ -1324,6 +1332,11 @@ p{
 }
 .section-nosotros-child{
     margin: 2rem 0;
+}
+.section-nosotros-child p{
+    color: var(--bg-white);
+    margin: 1rem 3rem;
+    text-align: center;    
 }
 @media(min-width:992px){
     .contenedor-child{
@@ -1373,55 +1386,42 @@ p{
         left: 45.5%;
     }
 }
-.section-nosotros-child p{
-    color: var(--bg-white);
-    margin: 1rem 3rem;
-    text-align: center;    
+.section-cultural{
+    margin-top: 5rem;
+}
+.section-cultural .box__contenido p{
+    margin-top: 3rem;
+    font-size: 1.6rem;
 }
 @media(min-width:768px){
     .section-cultural{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1.3fr 1fr;
         column-gap: 6rem;
         margin-bottom: 4rem;
     }
-    .section-cultural h3{
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-    }
+    .section-cultural h3,
     .section-cultural h2{
         grid-column: 1 / 3;
-        grid-row: 2 / 3;
-        margin-bottom: 2rem;        
     }
-    .section-cultural p{
+    .section-cultural h2{
+        margin-bottom: 3rem;
+    }
+    .section-cultural .box__contenido{
         grid-column: 1 / 2;
-        grid-row:  3 / 4;
+        grid-row: 3 / 4;
     }
-    .contenedor-imagen{
-        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-        overflow: hidden;
-    }
-    .section-cultural img{
-        grid-column:  2 / 3;
-        transform: scale(1.05);    
-        transition: all ease-in-out .5s;
-    }
-    .section-cultural img:hover{
-        transform: scale(1.2);
+    .section-cultural .box__contenido p{
+        margin: 0;
+        padding: 0;
     }
 }
-/* @media(min-width:992px){
-    .section-main--mod{
-        grid-template-columns: 1fr 2fr !important;
+@media(min-width:992px){
+    .section-cultural{
+        grid-template-columns: 2fr 1.4fr;
+        column-gap: 12rem;
     }
-}*/
-@media(min-width:1200px){
-    .section-main--mod{
-        grid-template-columns: inherit;
-        column-gap: inherit;
-    }
-} 
+}
 .btn-nosotros{
     width: 65%;
     margin: 2rem auto 0 auto;
@@ -1509,3 +1509,6 @@ p{
         height: 65rem;
     }
 }
+
+
+
