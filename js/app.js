@@ -174,7 +174,7 @@ function mostrarScroll(){
         let $alturaAnimado = $animado[i].offsetTop;
         if($alturaAnimado - 400 < $scrollTop){
             $animado[i].style.opacity = 1;
-            $animado[i].classList.add('mostrarArriba');
+            $animado[i].classList.add('mostrarAnimadoTop');
        }
     }   
 }
