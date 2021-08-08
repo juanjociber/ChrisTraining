@@ -131,35 +131,51 @@ function cargarVideo(url){
 /**=======================================================
     *              ANIMACIONES A ELEMENTOS
 =========================================================*/
-let mqMax991 = window.matchMedia('(max-width:991px)')
-function animaciones(mqMax992){
-    if(mqMax991.matches){
-        console.log('movil')
-        window.sr = ScrollReveal();
-            sr.reveal('.scroll-banner',{
-                duration : 4000,
-                origin: 'bottom',
-                distance: '-100px'
-            });
-            sr.reveal('.scroll-plan',{
-                duration : 2000,
-                origin: 'bottom',
-                distance: '400px'
-            });
-    }
-    else{
-        window.sr = ScrollReveal();
-            sr.reveal('.scroll-menu',{
-                duration : 4000,
-                origin: 'bottom',
-                distance: '-100px'
-            });
-            sr.reveal('.scroll-banner',{
-                duration : 4000,
-                origin: 'bottom',
-                distance: '-100px'
-            });
-    }
+// let mqMax991 = window.matchMedia('(max-width:991px)')
+// function animaciones(mqMax992){
+//     if(mqMax991.matches){
+//         console.log('movil')
+//         window.sr = ScrollReveal();
+//             sr.reveal('.scroll-banner',{
+//                 duration : 4000,
+//                 origin: 'bottom',
+//                 distance: '-100px'
+//             });
+//             sr.reveal('.scroll-plan',{
+//                 duration : 2000,
+//                 origin: 'bottom',
+//                 distance: '400px'
+//             });
+//     }
+//     else{
+//         window.sr = ScrollReveal();
+//             sr.reveal('.scroll-menu',{
+//                 duration : 4000,
+//                 origin: 'bottom',
+//                 distance: '-100px'
+//             });
+//             sr.reveal('.scroll-banner',{
+//                 duration : 4000,
+//                 origin: 'bottom',
+//                 distance: '-100px'
+//             });
+//     }
+// }
+// animaciones(mqMax991)
+// mqMax991.addListener(animaciones);
+
+/**=======================================================
+    *              ANIMACIONES A ELEMENTOS
+=========================================================*/
+let $animado = document.querySelectorAll('.animado')
+function mostrarScroll(){
+    let $scrollTop = document.documentElement.scrollTop;
+    for(let i = 0; i < $animado.length; i ++){
+        let $alturaAnimado = $animado[i].offsetTop;
+        if($alturaAnimado - 400 < $scrollTop){
+            $animado[i].style.opacity = 1;
+            $animado[i].classList.add('mostrarArriba');
+       }
+    }   
 }
-animaciones(mqMax991)
-mqMax991.addListener(animaciones);
+window.addEventListener('scroll',mostrarScroll);
