@@ -62,6 +62,21 @@ icoAngulo.addEventListener('click',function(){
         
     }
 })
+/**=======================================================
+    *              ANIMACIONES A ELEMENTOS
+=========================================================*/
+let $animado = document.querySelectorAll('.animado')
+function mostrarScroll(){
+    let $scrollTop = document.documentElement.scrollTop;
+    for(let i = 0; i < $animado.length; i ++){
+        let $alturaAnimado = $animado[i].offsetTop;
+        if($alturaAnimado - 700 < $scrollTop){
+            $animado[i].style.opacity = 1;
+            $animado[i].classList.add('mostrarAnimadoTop');
+       }
+    }   
+}
+window.addEventListener('scroll',mostrarScroll);
 
 /*======================================================
  -> TEXTO PARALLAX (ESCRIBE CARACTER POR CARACTER)
@@ -164,18 +179,4 @@ function cargarVideo(url){
 // animaciones(mqMax991)
 // mqMax991.addListener(animaciones);
 
-/**=======================================================
-    *              ANIMACIONES A ELEMENTOS
-=========================================================*/
-let $animado = document.querySelectorAll('.animado')
-function mostrarScroll(){
-    let $scrollTop = document.documentElement.scrollTop;
-    for(let i = 0; i < $animado.length; i ++){
-        let $alturaAnimado = $animado[i].offsetTop;
-        if($alturaAnimado - 500 < $scrollTop){
-            $animado[i].style.opacity = 1;
-            $animado[i].classList.add('mostrarAnimadoTop');
-       }
-    }   
-}
-window.addEventListener('scroll',mostrarScroll);
+
