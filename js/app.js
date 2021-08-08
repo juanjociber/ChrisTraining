@@ -8,9 +8,8 @@ document.addEventListener('DOMContentLoaded',()=>{
 function MenuResponsive(){
     let menu = document.querySelector('#btnMenu')
     let menuContent = document.querySelector('.men')
-    let enlaceVideo = document.querySelector('section .navegacion li')
-    
-    console.log(enlaceVideo)
+    // let enlaceVideo = document.querySelector('section .navegacion li')
+    // console.log(enlaceVideo)
     let contador = 1
 
     menu.addEventListener('click',function(){
@@ -37,12 +36,12 @@ conta = 1
 
 function mqSubmenu(mqMax767){
     if(mqMax767.matches){
-        console.log('movil')
+        // console.log('movil')
         subMenu.style.display ='none'
         
     }
     else{
-        console.log('desktop')
+        // console.log('desktop')
         subMenu.style.display='block'
         
     }
@@ -132,101 +131,35 @@ function cargarVideo(url){
 /**=======================================================
     *              ANIMACIONES A ELEMENTOS
 =========================================================*/
-// let mqMin992 = window.matchMedia('(min-width:992px)')
-// function animaciones(mqMin992){
-//     if(mqMin992.matches){
-//         // console.log('escritorio')
-//         window.sr = ScrollReveal();
-//             sr.reveal('.scroll-menu',{
-//                 duration : 4000,
-//                 origin: 'bottom',
-//                 distance: '-100px'
-//             });
-
-//             sr.reveal('.scroll-banner',{
-//                 duration : 4000,
-//                 origin: 'bottom',
-//                 distance: '-100px'
-//             });
-
-//             sr.reveal('.scroll-plan',{
-//                 duration : 2000,
-//                 origin: 'bottom',
-//                 distance: '400px'
-//             });
-
-//             sr.reveal('.scroll-entrena',{
-//                 duration : 2000,
-//                 origin: 'bootom',
-//                 distance: '400px'
-//             });
-
-//             sr.reveal('.scroll-testimonio',{
-//                 duration : 2000,
-//                 origin: 'bottom',
-//                 distance: '400px'
-//             });
-    
-//             sr.reveal('.scroll-cultura',{
-//                 duration : 2000,
-//                 origin: 'bottom',
-//                 distance: '400px'
-//             });
-
-//             sr.reveal('.scroll-formulario',{
-//                 duration : 2000,
-//                 distance: '0px',
-//                 easing: 'cubic-bezier(0.5,0,0,1)'
-//             });
-//             sr.reveal('.scroll-siguenos',{
-//                 duration : 2000,
-//                 origin: 'bottom',
-//                 distance: '400px'
-//             });
-//     }
-//     else{
-//         // console.log('smartphone')
-//         window.sr = ScrollReveal();
-//         sr.reveal('.scroll-banner',{
-//             duration : 4000,
-//             origin: 'bottom',
-//             distance: '-100px'
-//         });
-//         sr.reveal('.scroll-plan',{
-//             duration : 2000,
-//             origin: 'bottom',
-//             distance: '400px'
-//         });
-//         sr.reveal('.scroll-entrena',{
-//             duration : 2000,
-//             origin: 'bottom',
-//             distance: '400px'
-//         });
-//         sr.reveal('.scroll-testimonio',{
-//             duration : 2000,
-//             origin: 'bottom',
-//             distance: '400px'
-//         });
-//         sr.reveal('.scroll-formulario',{
-//             duration : 2000,
-//             origin: 'bottom',
-//             distance: '400px'
-//         });
-//         sr.reveal('.scroll-siguenos',{
-//             duration : 2000,
-//             origin: 'bottom',
-//             distance: '400px'
-//         });
-//         sr.reveal('.scroll-cultura',{
-//             duration : 2000,
-//             origin: 'bottom',
-//             distance: '400px'
-//         });
-//     }
-// }
-// animaciones(mqMin992)
-// mqMin992.addListener(animaciones)
-
-
-
-
+let mqMax991 = window.matchMedia('(max-width:991px)')
+function animaciones(mqMax992){
+    if(mqMax991.matches){
+        console.log('movil')
+        window.sr = ScrollReveal();
+            sr.reveal('.scroll-banner',{
+                duration : 4000,
+                origin: 'bottom',
+                distance: '-100px'
+            });
+            sr.reveal('.scroll-plan',{
+                duration : 2000,
+                origin: 'bottom',
+                distance: '400px'
+            });
+    }
+    else{
+        window.sr = ScrollReveal();
+            sr.reveal('.scroll-menu',{
+                duration : 4000,
+                origin: 'bottom',
+                distance: '-100px'
+            });
+            sr.reveal('.scroll-banner',{
+                duration : 4000,
+                origin: 'bottom',
+                distance: '-100px'
+            });
+    }
+}
+animaciones(mqMax991)
+mqMax991.addListener(animaciones);

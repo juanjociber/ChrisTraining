@@ -530,6 +530,11 @@ p{
     border: none;
     background-color: var(--bg-secundario);
 }
+@media(min-width:768px){
+    .section-boton--mod{
+        margin-top: 2rem !important;
+    }
+}
 @media(min-width:992px){
     .banner__boton{
         background-color: var(--bg-secundario);
