@@ -1205,6 +1205,13 @@ p{
         transform: translateY(0);
     }
 }
+
+@keyframes mover{
+    0%{
+        transform: translate(100%);
+    }
+}
+
 /*===========================
 -> PÁGINA: NOSOTROS
 =============================*/

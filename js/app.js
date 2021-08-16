@@ -78,6 +78,29 @@ function mostrarScroll(){
 }
 window.addEventListener('scroll',mostrarScroll);
 
+// window.addEventListener('scroll',function(){
+//     let $animacion = document.querySelector('#animacion')
+//     let $posObj1 = $animacion.getBoundingClientRect().top;
+//     console.log($posObj1)
+//     let $tamañoPantalla = window.innerHeight / 3.5;
+    
+//     if($posObj1 < $tamañoPantalla){
+//         $animacion.style.animation = 'mover 1s ease-out'
+//     }
+// });
+
+
+// window.onscroll = function(){
+//     if((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight){
+//         const $testi = document.querySelector('#testimonio')
+//         $testi.innerHTML+=`<br><br><br><br><br><p><</p>MÁS CONTENIDO <br><br><br><br>`;
+//     }
+// }
+
+
+
+
+
 /*======================================================
  -> TEXTO PARALLAX (ESCRIBE CARACTER POR CARACTER)
  =======================================================*/
