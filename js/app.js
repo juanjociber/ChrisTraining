@@ -8,8 +8,6 @@ document.addEventListener('DOMContentLoaded',()=>{
 function MenuResponsive(){
     let menu = document.querySelector('#btnMenu')
     let menuContent = document.querySelector('.men')
-    // let enlaceVideo = document.querySelector('section .navegacion li')
-    // console.log(enlaceVideo)
     let contador = 1
 
     menu.addEventListener('click',function(){
@@ -36,14 +34,10 @@ conta = 1
 
 function mqSubmenu(mqMax767){
     if(mqMax767.matches){
-        // console.log('movil')
         subMenu.style.display ='none'
-        
     }
     else{
-        // console.log('desktop')
         subMenu.style.display='block'
-        
     }
 }
 mqSubmenu(mqMax767)
@@ -59,7 +53,6 @@ icoAngulo.addEventListener('click',function(){
         conta = 1
         subMenu.style.display='none'
         icoAngulo.setAttribute('transform','rotate(0)')
-        
     }
 })
 /**=======================================================
@@ -78,31 +71,8 @@ function mostrarScroll(){
 }
 window.addEventListener('scroll',mostrarScroll);
 
-// window.addEventListener('scroll',function(){
-//     let $animacion = document.querySelector('#animacion')
-//     let $posObj1 = $animacion.getBoundingClientRect().top;
-//     console.log($posObj1)
-//     let $tamañoPantalla = window.innerHeight / 3.5;
-    
-//     if($posObj1 < $tamañoPantalla){
-//         $animacion.style.animation = 'mover 1s ease-out'
-//     }
-// });
-
-
-// window.onscroll = function(){
-//     if((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight){
-//         const $testi = document.querySelector('#testimonio')
-//         $testi.innerHTML+=`<br><br><br><br><br><p><</p>MÁS CONTENIDO <br><br><br><br>`;
-//     }
-// }
-
-
-
-
-
 /*======================================================
- -> TEXTO PARALLAX (ESCRIBE CARACTER POR CARACTER)
+ -> TEXTO CLICK (ESCRIBE CARACTER POR CARACTER)
  =======================================================*/
 function viewAqui(){
    const $click = document.querySelector('#click')
@@ -140,13 +110,6 @@ function viewAqui(){
 };
 viewAqui();
 
-/*=================
- -> SLIDER VIDEO
- ==================*/
-function cargarVideo(url){
-	document.getElementById('sliderVideo').src=url;
-}
-
 /**=======================================================
     *                BOTON DESPLAZA ARRIBA
 =========================================================*/
@@ -166,40 +129,4 @@ function cargarVideo(url){
         })
     });
  
-/**=======================================================
-    *              ANIMACIONES A ELEMENTOS
-=========================================================*/
-// let mqMax991 = window.matchMedia('(max-width:991px)')
-// function animaciones(mqMax992){
-//     if(mqMax991.matches){
-//         console.log('movil')
-//         window.sr = ScrollReveal();
-//             sr.reveal('.scroll-banner',{
-//                 duration : 4000,
-//                 origin: 'bottom',
-//                 distance: '-100px'
-//             });
-//             sr.reveal('.scroll-plan',{
-//                 duration : 2000,
-//                 origin: 'bottom',
-//                 distance: '400px'
-//             });
-//     }
-//     else{
-//         window.sr = ScrollReveal();
-//             sr.reveal('.scroll-menu',{
-//                 duration : 4000,
-//                 origin: 'bottom',
-//                 distance: '-100px'
-//             });
-//             sr.reveal('.scroll-banner',{
-//                 duration : 4000,
-//                 origin: 'bottom',
-//                 distance: '-100px'
-//             });
-//     }
-// }
-// animaciones(mqMax991)
-// mqMax991.addListener(animaciones);
-
 

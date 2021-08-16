@@ -1,3 +1,9 @@
+/*=================
+ -> SLIDER VIDEO
+ ==================*/
+ function cargarVideo(url){
+	document.getElementById('sliderVideo').src=url;
+}
 /*================
 -> ARREGLOS:
 ==================*/

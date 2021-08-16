@@ -18,56 +18,50 @@ const testimonios=[
 
 let testimonioArray = Object.entries(testimonios);
 
-const $swiper_wrapper = document.querySelector('.swiper-wrapper')
-const $fragmetTestimonios = document.createDocumentFragment();
 
-testimonioArray.forEach(function(eve){
-    // console.log(eve[1])
-    const $swiper_slide = document.createElement('DIV')
-    $swiper_slide.classList.add('swiper-slide')
+const $sliderTestimonio = document.querySelector('#sliderTestimonio');
+let $sliderSection = document.querySelectorAll('.sliderTestimonio__section');
+let $sliderSectionLast = $sliderSection[$sliderSection.length -1];
 
-    const $figureTestimonio = document.createElement('FIGURE')
-    $figureTestimonio.classList.add('figure-testimonio')
-    $figureTestimonio.classList.add('swiper-slide')
+const $btnLeft = document.querySelector('#btnTestimonio-left');
+const $btnRigth = document.querySelector('#btnTestimonio-right');
 
-    const $imgTestimonio = document.createElement('IMG')
-    $imgTestimonio.classList.add('figure-testimonio__imagen')
-    $imgTestimonio.setAttribute('src',eve[1].imgTestimonio)
-    $imgTestimonio.setAttribute('Alt','imagen-testimonio')
-    
-    const $divTestimonio = document.createElement('DIV')
-    $divTestimonio.classList.add('contenido-figure')
-    
-    const $blockquote = document.createElement('BLOCKQUOTE')
-    
-    const $pTestimonio = document.createElement('P')
-    $pTestimonio.textContent= eve[1].comentario 
-    $pTestimonio.classList.add('blockquote-texto')
-    
-    const $figcaptionTestimonio = document.createElement('FIGCAPTION')
-    $figcaptionTestimonio.classList.add('figcaption-testimonio')
-    
-    const $ftNombre =document.createElement('DIV')
-    $ftNombre.textContent=eve[1].nombre
-    $ftNombre.classList.add('ft-nombre')
-    
-    const $ftDistrito =document.createElement('DIV')
-    $ftDistrito.textContent = eve[1].distrito
-    $ftDistrito.classList.add('ft-distrito')
+$sliderTestimonio.insertAdjacentElement('afterbegin',$sliderSectionLast);
 
-    /**==== Agregando al DOM =====*/
-    $figcaptionTestimonio.appendChild($ftNombre)
-    $figcaptionTestimonio.appendChild($ftDistrito)
+function Next(){
+    let $sliderSectionFirst = document.querySelectorAll('.sliderTestimonio__section')[0];
+    $sliderTestimonio.style.marginLeft = '-200%';
+    $sliderTestimonio.style.transition = 'all 0.5s';
+    setTimeout(() => {  
+        $sliderTestimonio.style.transition = 'none';
+        $sliderTestimonio.insertAdjacentElement('beforeend',$sliderSectionFirst);
+        $sliderTestimonio.style.marginLeft = '-100%';
+    }, 500);
+}
 
-    $blockquote.appendChild($pTestimonio)
-    $divTestimonio.appendChild($blockquote)
+$btnRigth.addEventListener('click',function(){
+    Next();
+})
 
-    $divTestimonio.appendChild($figcaptionTestimonio)
+function Prev(){
+    let $sliderSection = document.querySelectorAll('.sliderTestimonio__section');
+    let $sliderSectionLast = $sliderSection[$sliderSection.length -1];
 
-    $figureTestimonio.appendChild($imgTestimonio)
-    $figureTestimonio.appendChild($divTestimonio)
-    
-    $swiper_slide.appendChild($figureTestimonio)
-    $fragmetTestimonios.appendChild($swiper_slide)
-    $swiper_wrapper.appendChild($fragmetTestimonios)
-});
+    $sliderTestimonio.style.marginLeft = '0';
+    $sliderTestimonio.style.transition = 'all 0.5s';
+    setTimeout(() => {  
+        $sliderTestimonio.style.transition = 'none';
+        $sliderTestimonio.insertAdjacentElement('afterbegin',$sliderSectionLast);
+        $sliderTestimonio.style.marginLeft = '-100%';
+    }, 500);
+}
+
+$btnLeft.addEventListener('click',function(){
+    Prev();
+})
+
+
+
+// setInterval(() => {
+//    Next(); 
+// }, 10000);
