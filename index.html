@@ -6,24 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christraining</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <!--ANIMATE_CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="css/animates.css">
+    <meta name="description" content="Entrenamiento personalizado de la salud">
     <!--ICONOS-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="img/COLOR.ico" type="image/x-icon">
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/appVideoSlider.css">
-    <link rel="stylesheet" href="css/slider.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="css/whatsApp.css">
     <link rel="stylesheet" href="css/inicio.css">
-    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
@@ -51,7 +48,10 @@
                     <li><a href="index.html" class="selected">Inicio</a></li>
                     <li class="men--mod"><a href="nosotros.html">Nosotros</a>
                     <li id="men--mod"><a href="entrenamiento.html">Entrenamiento</a>
-                        <svg id="icoAngulo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #EE1D3A;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                        <svg id="icoAngulo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" style="fill: #EE1D3A;">
+                            <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                        </svg>
                         <ul class="submen">
                             <li><a href="salud-moveon.html">Salud (Move On)</a></li>
                             <li><a href="deporte-sport100.html">Deporte (Sport 100)</a></li>
@@ -60,24 +60,28 @@
                     <li><a href="contactenos.html">Contactenos</a></li>
                 </ul>
                 <div class="navegacion__mensaje" id="navegacion__mensaje">
-                    <p>¿Quieres un plan de entrenamiento gratis? Entra:<a class="click" href="entrenamiento.html">Aquí</a></p>
-                </div>    
+                    <p>¿Quieres un plan de entrenamiento gratis? Entra:<a class="click"
+                            href="entrenamiento.html">Aquí</a></p>
+                </div>
             </nav>
             <div id="fijo"></div>
             <img class="banner__logo" src="img/COLOR2.png" alt="Logo Training">
             <section class="section-boton">
-                <h1 class="banner__boton m-0">Elige tu plan de entrenamiento :<a class="click click--mod" id="click" href="#"></a></h1>
+                <h1 class="banner__boton m-0">Elige tu plan de entrenamiento :<a class="click click--mod" id="click"
+                        href="#"></a></h1>
             </section>
         </div>
         <div id="slider">
             <div class="fondo">
                 <video id="sliderVideo" autoplay muted loop>
-                    <source src="https://res.cloudinary.com/juanjoh/video/upload/v1629124105/Christraining/video1_thmzo3.mp4" type="video/mp4">		
+                    <source
+                        src="https://res.cloudinary.com/juanjoh/video/upload/v1629124105/Christraining/video1_thmzo3.mp4"
+                        type="video/mp4">
                 </video>
             </div>
         </div>
     </header>
-    
+
     <main class="main contenedor">
         <section class="section-main section-plan">
             <h3>Especialistas en training</h3>
@@ -91,80 +95,124 @@
             <div class="box__contenido">
                 <p>¿Quiénes somos?</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt laboriosam quae
-                dicta, delectus veniam odit rerum, doloremque quos id nesciunt nobis animi harum facere fugiat minima?
-                Beatae eligendi ducimus officia Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt laboriosam quae
-                dicta, delectus veniam odit rerum, doloremque quos id nesciunt nobis animi harum facere fugiat
-                minima?
-                Beatae eligendi ducimus officia!
+                    dicta, delectus veniam odit rerum, doloremque quos id nesciunt nobis animi harum facere fugiat
+                    minima?
+                    Beatae eligendi ducimus officia Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+                    laboriosam quae
+                    dicta, delectus veniam odit rerum, doloremque quos id nesciunt nobis animi harum facere fugiat
+                    minima?
+                    Beatae eligendi ducimus officia!
                 </p>
             </div>
-            <div class="box__imagen">
+            <div class="box__imagen contenedor">
                 <img src="img/foto1.jpg" alt="Imagen 1">
             </div>
         </section>
-                                            
-        <section class="section-main animado" id="testimonio">
+
+        <section class="section-main animado contenedor " id="testimonio">
             <h3>Te brindamos un servicio destacado</h3>
             <h2>Testimonios</h2>
-            <div class="swiper-container mySwiper">
-                <div class="swiper-wrapper"></div><!--TESTIMONIOS-->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+            <div class="container-sliderTestimonio">
+                <div class="sliderTestimonio" id="sliderTestimonio">
+                    <div class="sliderTestimonio__section">
+                        <img class="sliderTestimonio__img" src="img/persona1.jpg" alt="">
+                        <div class="sliderTestimonio__contenido">
+                            <p class="comentario"><span class="comillas">"</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere enim obcaecati ullam nihil
+                                harum. Veritatis nam sed fugit et, ipsa quis dolores sapiente maiores error cupiditate
+                                fugiat ipsum odit quisquam<span class="comillas">"</span>.
+                            </p>
+                            <p class="nombre">Vania H.F</p>
+                            <small class="distrito">Los Olivos</small>
+                        </div>
+                    </div>
+                    <div class="sliderTestimonio__section">
+                        <img class="sliderTestimonio__img" src="img/persona2.jpg" alt="">
+                        <div class="sliderTestimonio__contenido">
+                            <p class="comentario"><span class="comillas">"</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere enim obcaecati ullam nihil
+                                harum. Veritatis nam sed fugit et, ipsa quis dolores sapiente maiores error cupiditate
+                                fugiat ipsum odit quisquam<span class="comillas">"</span>.
+                            </p>
+                            <p class="nombre">André H.F</p>
+                            <small class="distrito">Los Olivos</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="sliderTestimonio__btn sliderTestimonio__btn--rigth" id="btnTestimonio-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right"
+                        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#bbbbbbe1" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <polyline points="9 6 15 12 9 18" />
+                    </svg>
+                </div>
+                <div class="sliderTestimonio__btn sliderTestimonio__btn--left" id="btnTestimonio-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#bbbbbbe1" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <polyline points="15 6 9 12 15 18" />
+                    </svg>
+                </div>
             </div>
         </section>
-        
+
+
         <section class="section-main animado">
             <h3>Queremos ayudarte a lograrlo</h3>
             <h2>¡Entrena con nosotros!</h2>
-                <div class="contactenos-formulario">
-                        <form class="formulario contenedor animando" name="contacto" method="POST" data-netlify="true" action="/pag">
-                            <div class="contenedor-campos">
-                                <div class="campo">
-                                    <div class="input-icon">
-                                        <input class="input-text" name="nombre" type="text" placeholder="Nombres" required aria-hidden="true">
-                                        <i class='bx bxs-user bx--mod'></i>
-                                    </div>
-                                </div>
-
-                                <div class="campo">
-                                    <div class="input-icon">
-                                        <input class="input-text" name="apellido" type="text" placeholder="apellidos" required aria-hidden="true">
-                                        <i class='bx bxs-user bx--mod'></i>
-                                    </div>
-                                </div>
-    
-                                <div class="campo">
-                                    <div class="input-icon">
-                                        <input class="input-text input-text__email" type="email" name="email" placeholder="Email" required aria-hidden="true">
-                                        <i class='bx bx-envelope bx--mod'></i>
-                                    </div>
-                                </div>
-    
-                                <div class="campo">
-                                    <div class="input-icon">
-                                        <input class="input-text" type="tel" name="celular" placeholder="Celular" required aria-hidden="true">
-                                        <i class='bx bx-phone bx--mod'></i>
-                                    </div>
-                                </div>
-
-                                <div class="campo">
-                                    <select name="opciones" id="" class="select-text">
-                                        <option class="opcion" value="0">Seleccione un opción</option>
-                                        <option class="opcion" value="1">Salud (Move on)</option>
-                                        <option class="opcion" value="2">Deportista (Sport 100)</option>
-                                    </select>
-                                </div>
+            <div class="contactenos-formulario contenedor">
+                <form class="formulario contenedor animado" name="contacto" method="POST" data-netlify="true"
+                    action="/pag">
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <div class="input-icon">
+                                <input class="input-text" name="nombre" type="text" placeholder="Nombres" required
+                                    aria-hidden="true">
+                                <i class='bx bxs-user bx--mod'></i>
                             </div>
-    
-                            <div class="boton-formulario">
-                                <div class="input-btn">
-                                <input class="btn btn--mod" type="submit" name="envio" value="Enviar">
-                                <i class='bx bx-send' ></i>
-                                </div>
+                        </div>
+
+                        <div class="campo">
+                            <div class="input-icon">
+                                <input class="input-text" name="apellido" type="text" placeholder="apellidos" required
+                                    aria-hidden="true">
+                                <i class='bx bxs-user bx--mod'></i>
                             </div>
-                        </form>
-                </div>
+                        </div>
+
+                        <div class="campo">
+                            <div class="input-icon">
+                                <input class="input-text input-text__email" type="email" name="email"
+                                    placeholder="Email" required aria-hidden="true">
+                                <i class='bx bx-envelope bx--mod'></i>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <div class="input-icon">
+                                <input class="input-text" type="tel" name="celular" placeholder="Celular" required
+                                    aria-hidden="true">
+                                <i class='bx bx-phone bx--mod'></i>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <select name="opciones" id="" class="select-text">
+                                <option class="opcion" value="0">Seleccione un opción</option>
+                                <option class="opcion" value="1">Salud (Move on)</option>
+                                <option class="opcion" value="2">Deportista (Sport 100)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="boton-formulario">
+                        <div class="input-btn">
+                            <input class="btn btn--mod" type="submit" name="envio" value="Enviar">
+                            <i class='bx bx-send'></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
 
         <section class="section-main animado">
@@ -175,7 +223,8 @@
                     <button aria-label="Anterior" class="carousel__anterior">
                         <i class='bx bxs-chevron-left'></i>
                     </button>
-                    <ul class="carousel__lista"></ul><!--CAROUSEL-->
+                    <ul class="carousel__lista"></ul>
+                    <!--CAROUSEL-->
                     <button aria-label="Siguiente" class="carousel__siguiente">
                         <i class='bx bxs-chevron-right'></i>
                     </button>
@@ -184,6 +233,9 @@
             </div>
         </section>
     </main>
+
+
+
 
     <footer class="footer">
         <div class="footer-informe">
@@ -208,32 +260,31 @@
                         <div class="items-footer">
                             <ul class="items">
                                 <li><i class='bx bxl-facebook-square'></i><a href="#">Christraining Oficial</a></li>
-                                <li><i class='bx bxl-instagram'></i><a href="https://www.instagram.com/christraining0/">@christraining</a></li>
-                                <li><i class='bx bx-envelope'></i><a href="mailto:">Christraining oficial@gmail.com</a></li>
+                                <li><i class='bx bxl-instagram'></i><a
+                                        href="https://www.instagram.com/christraining0/">@christraining</a></li>
+                                <li><i class='bx bx-envelope'></i><a href="mailto:">Christraining oficial@gmail.com</a>
+                                </li>
                                 <li><i class='bx bx-phone'></i><a href="tel:+935233669">935 233 669</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="campo-footer contenedor">
-                        <small class="copyrigth">Copyrigth &copy; 2021 Christraining | Diseñado y Desarrollado por: <a class="autor" href="tel:+953659803">Juan J. Huiza</a></small>
+                        <small class="copyrigth">Copyrigth &copy; 2021 Christraining | Diseñado y Desarrollado por: <a
+                                class="autor" href="tel:+953659803">Juan J. Huiza</a></small>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- JS -->
-<script src="js/glider.js"></script>
 <script src="js/app.js"></script>
 <script src="js/appFijo.js"></script>
 <script src="js/appVideo.js"></script>
-<script src="js/slider.js"> </script>
 <script src="js/carousel-index.js"></script>
 <script src="js/testimonios-index.js"></script>
-<script src="js/planes.js"></script> 
+<script src="js/planes.js"></script>
+
 </html>
