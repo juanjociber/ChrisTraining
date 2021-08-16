@@ -1,7 +1,7 @@
 /*================
 -> ARREGLOS:
 ==================*/
-const videos = ['video/video1.mp4','video/video2.mp4','video/video3.mp4']
+const videos = ['https://res.cloudinary.com/juanjoh/video/upload/v1629124105/Christraining/video1_thmzo3.mp4','https://res.cloudinary.com/juanjoh/video/upload/v1629124441/Christraining/video2_cbvzvd.mp4','https://res.cloudinary.com/juanjoh/video/upload/v1629124491/Christraining/video3_rfxaki.mp4']
 const imagenes = ['img/imagen1.JPG','img/imagen2.JPG','img/imagen3.JPG']
 
 const $slider = document.querySelector('#slider')
