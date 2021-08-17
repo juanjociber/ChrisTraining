@@ -61,7 +61,6 @@ $btnLeft.addEventListener('click',function(){
 })
 
 
-
 // setInterval(() => {
 //    Next(); 
 // }, 10000);
