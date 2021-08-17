@@ -982,7 +982,7 @@ p{
     }
 }
 /* -> SECTION-MAIN 5 :CAROUSEL */
-.section-main:nth-child(5) h2 span{
+/* .section-main:nth-child(5) h2 span{
     text-transform: lowercase;
 }
 .carousel__contenedor {
@@ -1059,8 +1059,63 @@ p{
 .carousel__indicadores .glider-dot.active {
 	opacity: 1;
     background-color: var(--bg-black-firstChildren);
+} */
+
+.carusel-contenedor{
+    margin: 2rem auto;
+    overflow: hidden;
+    position: relative;
+}
+.caruseles{
+    display: flex;
+    width: 800%;
+    /* margin-left: -100%; */
+}
+.carusel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(min-width:576px){
+    .caruseles{
+        width: 400%;
+    }
+    .carusel{
+        margin: 0 0.5rem;
+    }
+}
+@media(min-width: 768px){
+    .caruseles{
+        width: 267%;
+    }
+}
+@media(min-width: 992px){
+    .caruseles{
+        width: 200%;
+    }
 }
 
+.carusel__btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 8rem;
+    font-weight: 400;
+    /* text-align: center; */
+    cursor: pointer;
+} 
+.carusel__btn--rigth{
+    right: 5px;
+}
+.carusel__btn--left{
+    left: 5px;
+}
+.carusel__btn--rigth svg:hover,
+.carusel__btn--left svg:hover{
+    stroke: #838383e1;
+    transition: all .5s;    
+}
 /*=============================
 -> FOOTER
 ===============================*/
