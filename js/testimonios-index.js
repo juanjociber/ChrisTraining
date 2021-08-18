@@ -3,15 +3,15 @@
 =====================================*/
 const testimonios=[
     {   imgTestimonio:'img/persona1.jpg' ,
-        comentario: `<span class="comillas">"</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum voluptas est veniam. Neque
+        comentario: `<i class='bx bxs-quote-alt-left comillas'></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum voluptas est veniam. Neque
                       rem atque dolore ratione amet nam, fugiat, tempora et necessitatibus consequatur odit? Et maiores
-                      deserunt illum molestiae. <span class="comillas">"</span>`,
+                      deserunt illum molestiae. <i class='bx bxs-quote-alt-right comillas'></i>`,
         nombre: 'Vania H.F.',
         distrito: 'Los Olivos'},
     {   imgTestimonio:'img/persona2.jpg' ,
-        comentario: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum voluptas est veniam. Neque
+        comentario: `<i class='bx bxs-quote-alt-left comillas'></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum voluptas est veniam. Neque
                       rem atque dolore ratione amet nam, fugiat, tempora et necessitatibus consequatur odit? Et maiores
-                      deserunt illum molestiae.`,
+                      deserunt illum molestiae. <i class='bx bxs-quote-alt-right comillas'></i>`,
         nombre: 'André H.F.',
         distrito: 'Los Olivos'}
     ]
