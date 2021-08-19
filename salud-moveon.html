@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app-acordeon.css">
     <link rel="stylesheet" href="css/whatsApp.css">
     <link rel="stylesheet" href="css/nosotros.css">
     <link rel="stylesheet" href="css/inicio.css">
@@ -166,41 +167,106 @@
             </div>
         </section>
 
-        <div class="btn-entrenarSalud">
-            <p class="btn-entrenamiento btn--mod" id="btn-entrenamiento">Quiero entrenar mi salud con move on</p>
-        </div>
-
-        <section class="section-entrenamiento" id="modalidad">
-            <h4>Modalidades de entrenamiento</h4>
-            <ul class="contenedor">
-                <li>
-                    <p class="tipo-modalidad">Presencial</p>
-                    <div class="box-modalidad contendor">
-                        <div class="box-modalidad__titulo contenedor">
-                            <p>Virtual</p>
+        <section class="section-modalidad contenedor">
+            <div class="contenedor-btn">
+                <p class="btn-entrenamiento btn--mod" id="btn-entrenamiento">Quiero entrenar mi salud con move on</p>
+            </div>
+            <div class="contenedor-modalidades">
+                <p class="contenedor-modalidades__titulo">Modalidades de entrenamiento</p>
+                <div class="list-container">
+                    <div class="item">
+                        <p class="btn-item active">Presencial</p>
+                        <div class="item-content">
+                            <div class="box-modalidad">
+                                <div class="box-modalidad__imagen">
+                                    <img src="img/1.jpg" alt="">
+                                </div>
+                                <div class="box-modalidad__titulo">
+                                    <p>Presencial</p>
+                                </div>
+                                <div class="box-modalidad__descripcion">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quaerat voluptates
+                                        alias facere quisquam, nihil ad deserunt eum id repellat odio, expedita qui, aspernatur aut
+                                        illum. Consequuntur accusantium assumenda molestias.
+                                    </p>
+                                </div>
+                                <div class="box-modalidad__redes">
+                                    <a href="#"><img src="img/facebook.svg" alt="imagen-facebook"></a>
+                                    <a href="#"><img src="img/instagram.svg" alt="imagen-instagram"></a>
+                                    <a href="#"><img src="img/gmail.svg" alt="imagen-gmail"></a>
+                                    <a href="#"><img src="img/smartphone.svg" alt="imagen-smartphone"></a>
+                                </div>
+                                <div class="box-modalidad__enlace">
+                                    <a href="#">Contáctanos aquí</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="box-modalidad__imagen contenedor">
-                            <img src="img/1.jpg" alt="">
+                        <div class="item">
+                            <p class="btn-item">Virtual</p>
+                            <div class="item-content">
+                                <div class="box-modalidad">
+                                    <div class="box-modalidad__imagen">
+                                        <img src="img/2.jpg" alt="">
+                                    </div>
+                                    <div class="box-modalidad__titulo">
+                                        <p>Virtual</p>
+                                    </div>
+                                    <div class="box-modalidad__descripcion">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quaerat voluptates
+                                            alias facere quisquam, nihil ad deserunt eum id repellat odio, expedita qui, aspernatur aut
+                                            illum. Consequuntur accusantium assumenda molestias.
+                                        </p>
+                                    </div>
+                                    <div class="box-modalidad__redes">
+                                        <a href="#"><img src="img/facebook.svg" alt="imagen-facebook"></a>
+                                        <a href="#"><img src="img/instagram.svg" alt="imagen-instagram"></a>
+                                        <a href="#"><img src="img/gmail.svg" alt="imagen-gmail"></a>
+                                        <a href="#"><img src="img/smartphone.svg" alt="imagen-smartphone"></a>
+                                    </div>
+                                    <div class="box-modalidad__enlace">
+                                        <a href="#">Contáctanos aquí</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="box-modalidad__descripcion contenedor">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quaerat voluptates
-                                alias facere quisquam, nihil ad deserunt eum id repellat odio, expedita qui, aspernatur aut
-                                illum. Consequuntur accusantium assumenda molestias.
-                            </p>
-                        </div>
-                        <div class="box-modalidad__enlace">
-                            <a href="#">Contáctanos aquí</a>
+                        <div class="item">
+                            <p class="btn-item">OffLine</p>
+                            <div class="item-content">
+                                <div class="box-modalidad">
+                                    <div class="box-modalidad__imagen">
+                                        <img src="img/3.jpg" alt="">
+                                    </div>
+                                    <div class="box-modalidad__titulo">
+                                        <p>OffLine</p>
+                                    </div>
+                                    <div class="box-modalidad__descripcion">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quaerat voluptates
+                                            alias facere quisquam, nihil ad deserunt eum id repellat odio, expedita qui, aspernatur aut
+                                            illum. Consequuntur accusantium assumenda molestias.
+                                        </p>
+                                    </div>
+                                    <div class="box-modalidad__redes">
+                                        <a href="#"><img src="img/facebook.svg" alt="imagen-facebook"></a>
+                                        <a href="#"><img src="img/instagram.svg" alt="imagen-instagram"></a>
+                                        <a href="#"><img src="img/gmail.svg" alt="imagen-gmail"></a>
+                                        <a href="#"><img src="img/smartphone.svg" alt="imagen-smartphone"></a>
+                                    </div>
+                                    <div class="box-modalidad__enlace">
+                                        <a href="#">Paga aquí</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
-
     </main>
+
     <!--==================================
         FOOTER
     ======================================-->
-    <footer class="footer">
+    <footer class="footer" style="margin-top: 4rem;">
         <div class="footer-informe">
             <div class="fondo-footer">
                 <div class="campos-footer">
@@ -223,10 +289,8 @@
                         <div class="items-footer">
                             <ul class="items">
                                 <li><i class='bx bxl-facebook-square'></i><a href="#">Christraining Oficial</a></li>
-                                <li><i class='bx bxl-instagram'></i><a
-                                        href="https://www.instagram.com/christraining0/">@christraining</a></li>
-                                <li><i class='bx bx-envelope'></i><a href="mailto:">Christraining oficial@gmail.com</a>
-                                </li>
+                                <li><i class='bx bxl-instagram'></i><a href="https://www.instagram.com/christraining0/">@christraining</a></li>
+                                <li><i class='bx bx-envelope'></i><a href="mailto:">Christraining oficial@gmail.com</a></li>
                                 <li><i class='bx bx-phone'></i><a href="tel:+935233669">935 233 669</a></li>
                             </ul>
                         </div>
