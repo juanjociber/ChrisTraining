@@ -1820,6 +1820,10 @@ p{
     display:block;
     transition: display 8s;
 }
+.section-modalidad .btn-entrenamiento{
+    font-size: 1.6rem;
+}
+
 .tipo-modalidad{
     padding: 1rem 0;
 }
