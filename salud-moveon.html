@@ -77,7 +77,7 @@
     <!--==================================
         MAIN
     ======================================-->
-    <main class="main-entrenamiento">
+    <main class="main-entrenamiento" >
         <!-- <section class="section-entrenamiento contenedor">
             <h3>Te acompañamos alcanzar tus metas</h3>
             <h2>Quiero entrenar por</h2>
@@ -92,20 +92,19 @@
                 </div>
             </div>
         </section> -->
-
         <section class="section-entrenamiento contenedor">
             <div class="logo-salud">
                 <img class="logo-salud__imagen" src="img/COLOR.png" alt="color">
             </div>
             <h3>Potenciamos cada parte de tu cuerpo</h3>
             <h2>Entrena por salud</h2>
-            <div class="box-entrenamiento box-entrenamiento--mod grid-2">
+            <div class="box-entrenamiento box-entrenamiento--mod grid">
                 <div class="entrenamiento__imagen contenedor">
                     <img src="img/foto2.jpg" alt="foto 2">
                 </div>
                 <div class="entrenamiento__contenido contenedor">
                     <p class="texto">Si tu objetivo es:</p>
-                    <ul>
+                    <ul >
                         <li>
                             <img src="img/christraining-check.svg" class="check" alt="check">
                             <p>Objetivo 1</p>
@@ -119,17 +118,18 @@
                             <p>Objetivo 2</p>
                         </li>
                     </ul>
-                    <div class="mensaje">
-                        <p id="mensaje"></p><i class='bx bx-run'></i>
-                    </div>
+                </div>
+                <div class="mensaje">
+                    <p id="mensaje"></p><i class='bx bx-run'></i>
                 </div>
             </div>
+            <div id="objetivo"></div>
         </section>
 
-        <section class="section-entrenamiento contenedor" id="objetivo">
-            <h3>podrás trabajar, tonificar y activar correctamente tu core</h3>
-            <h2>Principales fortalezas del plan move on</h2>
-            <div class="box-entrenamiento--mod">
+        <section class="section-entrenamiento contenedor grid-entrenamiento">
+            <h3 class="grid1">podrás trabajar, tonificar y activar correctamente tu core</h3>
+            <h2 class="grid2">Principales fortalezas del plan move on</h2>
+            <div class="box-entrenamiento--mod grid3">
                 <div class="entrenamiento__contenido contenedor">
                     <ul>
                         <li>
@@ -151,20 +151,19 @@
                     </ul>
                 </div>
             </div>
-        </section>
-
-        <section class="section-entrenamiento contenedor">
-            <div>
-                <video class="center controles" autoplay muted loop controls="controls">
+            <div class="video-contenedor grid4" style="margin-top: 2rem;">
+                <video class="center-video controles" autoplay muted loop controls="controls">
                     <source
                         src="https://res.cloudinary.com/juanjoh/video/upload/v1629124105/Christraining/video1_thmzo3.mp4"
                         type="video/mp4">
                 </video>
-                <section style="margin-top: 4rem;">
-                    <h3>Entrena tu vida con Christraining! 💯</h3>
-                    <h2>Empieza a mejorar tu salud</h2>
-                </section>
+                
             </div>
+        </section>
+
+        <section style="margin-top: 4rem;">
+            <h3>Entrena tu vida con Christraining! 💯</h3>
+            <h2>Empieza a mejorar tu salud</h2>
         </section>
 
         <section class="section-modalidad contenedor">
@@ -201,6 +200,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                         <div class="item">
                             <p class="btn-item">Virtual</p>
                             <div class="item-content">
