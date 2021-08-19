@@ -37,19 +37,35 @@
  };
  viewMensaje();
 
-
-// let video = document.querySelector(".controles");
-// video.addEventListener("seeking",
-//     function(){
-//         alert(this.currentTime)}//courrentTime = tiempo actual
-// );
-
-const $btnEntrenamiento = document.querySelector('#btn-entrenamiento')
-
-$btnEntrenamiento.addEventListener('click',function(event){
-    console.log(event)
+/*======================================================
+ -> DESGLOZA AL DAR CLICK EN BTN
+ =======================================================*/
+const $btn = document.querySelector('#btn-entrenamiento')
+const $contenedor = document.querySelector('.contenedor-modalidades')
+$btn.addEventListener('click',function(){
+    $contenedor.classList.toggle('activado')
 })
+/*======================================================
+ -> EVENTO ACORDEÓN EN MODALIDADES
+ =======================================================*/
+let btnItems = document.querySelectorAll(".item .btn-item");
+for(let i = 0 ; i < btnItems.length; i++ ){
+  console.log(i);
+  btnItems[i].addEventListener("click",function(e){
+    let btn = e.target;
+    if(btn.className == "btn-item active"){
+        removeClass()
+    }
+    else{
+        removeClass();
+        btn.classList.add("active");
+    }
+  })
+};
+//Funciones para que solo se muestre una selección y las demás se oculten 
+function removeClass(){
+    for(let i = 0 ; i < btnItems.length; i++){
+        btnItems[i].classList.remove("active");
+    }
+};
 
-window.addEventListener('click',function(e){
-    console.log(e.target)
-})

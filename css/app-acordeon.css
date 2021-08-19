@@ -1,0 +1,47 @@
+/*=========================================================
+                        VARIABLES
+===========================================================*/
+:root{
+    --bg-white: #ffffff;
+    --bg-black: #1D1C1D;
+    --bg-black-firstChildren: #36342f;
+    --bg-black-firstChildren-opacity:#414141;
+    --bg-primario: #EE1D3A;
+    --bg-secundario: #FF3753;
+    --font-parrafo: 'Raleway', sans-serif;
+    --font-principal: 'Roboto', sans-serif;
+    --font-comillas: 'Secular One', sans-serif;
+    --bg-amarillo: #ffc400;
+}
+.item{
+    margin: 0.5rem auto;
+}
+.btn-item{
+    background: var(--bg-black-firstChildren-opacity);
+    display: block;
+    color: white;
+    padding: 10px 8px;
+    box-shadow: inset 0 0 5px 0 rgba(226, 226, 226, 0.37);
+}
+.item-content{
+    overflow: hidden;
+    max-height: 0px;
+    opacity: 0;
+}
+.active + .item-content{
+    max-height: 1000px;
+    padding: 10px 10px 20px 10px;
+    opacity: 1;
+}
+.btn-item.active{
+    background: var(--bg-secundario);
+    font-weight: 700;
+}
+/*añadiendo '+' y '-'*/
+.btn-item:after{
+    content: '\002b';
+    float: right;
+}
+.btn-item.active:after{
+    content: "\02212";
+}
