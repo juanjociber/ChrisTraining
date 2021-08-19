@@ -3,14 +3,15 @@
  =======================================================*/
  function viewMensaje(){
     const $mensaje = document.querySelector('#mensaje')
-    let printCadena
+    let cadena
     const observando= new IntersectionObserver(function(e){
+        console.log(e)
         if(e[0].isIntersecting){
             console.log(e);
             let escritura = str =>{
                  let arrayStr = str.split('');
                  let i = 0;
-                 printCadena = setInterval(function () {
+                 cadena = setInterval(function () {
                      if(arrayStr[i] === ''){
                          $mensaje.innerHTML += arrayStr[i];
                          $mensaje.innerHTML += arrayStr[i + 1];
@@ -21,7 +22,7 @@
                          i++
                      }
                      if(i=== arrayStr.length){
-                         clearInterval(printCadena);
+                         clearInterval(cadena);
                      }
                  },100);
             }
@@ -29,7 +30,7 @@
         }
         else{
             console.log(e)
-            clearInterval(printCadena)
+            clearInterval(cadena)
             $mensaje.innerHTML= ""            
         }
     });
@@ -42,8 +43,18 @@
  =======================================================*/
 const $btn = document.querySelector('#btn-entrenamiento')
 const $contenedor = document.querySelector('.contenedor-modalidades')
+cuenta = 1
 $btn.addEventListener('click',function(){
-    $contenedor.classList.toggle('activado')
+    if(cuenta==1){
+        $contenedor.classList.add('activado')
+        $btn.innerHTML='Dar "Click" para Cerrar'
+        cuenta = 0; 
+    }
+    else{
+        cuenta = 1
+        $contenedor.classList.remove('activado')
+        $btn.innerHTML='Quiero entrenar mi salud con move on'
+    }
 })
 /*======================================================
  -> EVENTO ACORDEÓN EN MODALIDADES
