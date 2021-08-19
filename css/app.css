@@ -1937,6 +1937,7 @@ p{
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 900;
+    font-size: 1.7rem;
     transition: color .5s;
 }
 @media(min-width:640px){
