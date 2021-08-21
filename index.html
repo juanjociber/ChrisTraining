@@ -35,14 +35,18 @@
     </a>
     <!--Botón Arriba-->
     <span class="ir-arriba bx bxs-chevron-up"></span>
-
+    <!--==================================
+        HEADER
+    ======================================-->
     <header class="banner" id="banner">
         <div class="banner-fondo">
             <nav class="nav" id="nav">
                 <div class="logo">
                     <a href="index.html"><img class="logo__imagen" src="img/NEGATIVO.png" alt="logo"></a>
                 </div>
-                <div class="menu">Menú<i class='bx bx-menu' id="btnMenu"></i></div>
+                <div class="menu">Menú
+                    <i class='bx bx-menu' id="btnMenu"></i>
+                </div>
                 <ul class="men">
                     <a href="index.html"><img class="logo-menu-responsive" src="img/COLOR.png" alt="logo"></a>
                     <li><a href="index.html" class="selected">Inicio</a></li>
@@ -60,15 +64,15 @@
                     <li><a href="contactenos.html">Contactenos</a></li>
                 </ul>
                 <div class="navegacion__mensaje" id="navegacion__mensaje">
-                    <p>¿Quieres un plan de entrenamiento gratis? Entra:<a class="click"
-                            href="entrenamiento.html">Aquí</a></p>
+                    <p>¿Quieres un plan de entrenamiento gratis? Entra:<a class="click" href="entrenamiento.html">Aquí</a></p>
                 </div>
             </nav>
             <div id="fijo"></div>
             <img class="banner__logo" src="img/COLOR2.png" alt="Logo Training">
             <section class="section-boton">
-                <h1 class="banner__boton m-0">Elige tu plan de entrenamiento :<a class="click click--mod" id="click"
-                        href="#"></a></h1>
+                <h1 class="banner__boton m-0">Elige tu plan de entrenamiento :
+                    <a class="click click--mod" id="click" href="#"></a>
+                </h1>
             </section>
         </div>
         <div id="slider">
@@ -81,7 +85,9 @@
             </div>
         </div>
     </header>
-
+    <!--==================================
+        MAIN
+    ======================================-->
     <main class="main contenedor">
         <section class="section-main section-plan">
             <h3>Especialistas en training</h3>
@@ -156,9 +162,25 @@
 
                         <div class="campo">
                             <select name="opciones" id="" class="select-text">
-                                <option class="opcion" value="0">Seleccione un opción</option>
-                                <option class="opcion" value="1">Salud (Move on)</option>
+                                <option class="opcion" value="0">Seleccione plan de entrenamiento</option>
+                                <option class="opcion" value="1">Salud (Move On) </option>
                                 <option class="opcion" value="2">Deportista (Sport 100)</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <select name="opciones" id="" class="select-text">
+                                <option class="opcion" value="0">Seleccione modalidad</option>
+                                <option class="opcion" value="1">Presencial</option>
+                                <option class="opcion" value="2">Virtual</option>
+                                <option class="opcion" value="3">OffLine</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <select name="opciones" id="" class="select-text">
+                                <option class="opcion" value="0">Seleccione frecuencia</option>
+                                <option class="opcion" value="1">12 sesiones por mes</option>
+                                <option class="opcion" value="2">20 sesiones por mes</option>
+                                <option class="opcion" value="2">24 sesiones por mes</option>
                             </select>
                         </div>
                     </div>
@@ -179,7 +201,9 @@
             <ul class="carusel-contenedor contenedor"><!--carusel desarrollado en js--></ul>
         </section>
     </main>
-
+    <!--==================================
+        FOOTER
+    ======================================-->
     <footer class="footer">
         <div class="footer-informe">
             <div class="fondo-footer">
