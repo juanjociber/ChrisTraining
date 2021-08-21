@@ -5,21 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>christraining | Move On (Salud)</title>
-    <!--ICONOS-->
+    <!--styles-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/whatsApp.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <!--icons-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="img/COLOR.ico" type="image/x-icon">
-
-    <!--FONTS-->
+    <!--fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/app-acordeon.css">
-    <link rel="stylesheet" href="css/whatsApp.css">
-    <link rel="stylesheet" href="css/nosotros.css">
-    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>christraining | Move On (Salud)</title>
 </head>
 
 <body>
@@ -44,7 +43,9 @@
                 <div class="logo">
                     <a href="index.html"><img class="logo__imagen" src="img/NEGATIVO.png" alt="logo"></a>
                 </div>
-                <div class="menu">Menú<i class='bx bx-menu' id="btnMenu"></i></div>
+                <div class="menu">Menú
+                    <i class='bx bx-menu' id="btnMenu"></i>
+                </div>
                 <ul class="men">
                     <a href="index.html"><img class="logo-menu-responsive" src="img/COLOR.png" alt="logo"></a>
                     <li><a href="index.html">Inicio</a></li>
@@ -66,11 +67,10 @@
                 </div>
             </nav>
             <div class="fijo-nosotros"></div>
-            <img class="banner__logo banner__logo--mod" src="img/COLOR2.png" style="margin-top: 12rem;"
-                alt="Logo Training">
+            <img class="banner__logo banner__logo--mod" src="img/COLOR2.png" style="margin-top: 12rem;" alt="Logo Training">
             <section class="section-boton section-boton--mod">
-                <h1 class="banner__boton m-0">Elige tu plan de entrenamiento :<a class="click click--mod" id="click"
-                        href="#"></a></h1>
+                <h1 class="banner__boton m-0">Elige tu plan de entrenamiento :
+                    <a class="click click--mod" id="click" href="#"></a></h1>
             </section>
         </div>
     </header>
@@ -93,7 +93,7 @@
             </div>
         </section> -->
         <section class="section-entrenamiento contenedor">
-            <div class="logo-salud">
+            <div class="logo-salud animate__animated animate__bounce animate__slow" id="logo-salud">
                 <img class="logo-salud__imagen" src="img/COLOR.png" alt="color">
             </div>
             <h3>Potenciamos cada parte de tu cuerpo</h3>
@@ -166,12 +166,17 @@
             <h2>Empieza a mejorar tu salud</h2>
         </section>
 
-        <section class="section-modalidad contenedor animado">
-            <div class="contenedor-btn">
-                <p class="btn-entrenamiento btn--mod" id="btn-entrenamiento">Quiero entrenar mi salud con move on</p>
-            </div>
-            <div class="contenedor-modalidades">
+        <div class="contenedor-parallax">
+            <div class="fondo-parallax">
                 <p class="contenedor-modalidades__titulo">Modalidades de entrenamiento</p>
+            </div>
+        </div>
+
+        <section class="section-modalidad contenedor animado">
+            <!-- <div class="contenedor-btn">
+                <p class="btn-entrenamiento btn--mod" id="btn-entrenamiento">Quiero entrenar mi salud con move on</p>
+            </div> -->
+            <div class="contenedor-modalidades">
                 <div class="grid-modalidad">
                     <div class="box-modalidad animado">
                         <div class="box-modalidad__imagen">
@@ -195,7 +200,7 @@
                         <div class="box-modalidad__enlace">
                             <a href="#">Contáctanos aquí</a>
                         </div>
-                    </div>
+                    </div><!-- cierre de box-modalidad -->
                     <div class="box-modalidad animado">
                         <div class="box-modalidad__imagen">
                             <img src="img/2.jpg" alt="">
@@ -218,7 +223,7 @@
                         <div class="box-modalidad__enlace">
                             <a href="#">Contáctanos aquí</a>
                         </div>
-                    </div>
+                    </div><!-- cierre de box-modalidad -->
                     <div class="box-modalidad animado">
                         <div class="box-modalidad__imagen">
                             <img src="img/3.jpg" alt="">
@@ -241,7 +246,7 @@
                         <div class="box-modalidad__enlace">
                             <a href="#">Paga aquí</a>
                         </div>
-                    </div>
+                    </div><!-- cierre de box-modalidad -->
                 </div>
             </div>
         </section>

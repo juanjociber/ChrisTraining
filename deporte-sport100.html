@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--styles-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/whatsApp.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <!--icons-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="img/COLOR.ico" type="image/x-icon">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>christraining | Move On (Salud)</title>
+</head>
+
+<body>
+    <!--Logo de whatsApp-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=51935233669&text=Hola!%20Díganos%20en%20que%20podemos%20ayudarlo(a)."
+        rel="noopener" class="float" target="_blank">
+        <picture>
+            <source srcset="./img/whatsapp.webp" type="image/webp">
+            <img loading="lazy" src="./img/whatsapp.svg" alt="" title="WhatsApp">
+        </picture>
+    </a>
+    <!--Botón Arriba-->
+    <span class="ir-arriba bx bxs-chevron-up"></span>
+
+    <!--==================================
+        HEADER
+    ======================================-->
+    <header class="banner banner--mod" id="banner">
+        <div class="banner-fondo banner-fondo--mod">
+            <nav class="nav" id="nav">
+                <div class="logo">
+                    <a href="index.html"><img class="logo__imagen" src="img/NEGATIVO.png" alt="logo"></a>
+                </div>
+                <div class="menu">Menú
+                    <i class='bx bx-menu' id="btnMenu"></i>
+                </div>
+                <ul class="men">
+                    <a href="index.html"><img class="logo-menu-responsive" src="img/COLOR.png" alt="logo"></a>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="men--mod"><a href="nosotros.html">Nosotros</a>
+                    <li id="men--mod"><a href="#" class="selected">Entrenamiento</a>
+                        <svg id="icoAngulo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" style="fill: #EE1D3A;">
+                            <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                        </svg>
+                        <ul class="submen">
+                            <li><a href="salud-moveon.html">Salud (Move On)</a></li>
+                            <li><a href="deporte-sport100.html">Deporte (Sport 100)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactenos.html">Contactenos</a></li>
+                </ul>
+                <div class="navegacion__mensaje" id="navegacion__mensaje">
+                    <p>¿Quieres un plan de entrenamiento gratis? Entra:<a class="click" href="#">Aquí</a></p>
+                </div>
+            </nav>
+            <div class="fijo-nosotros"></div>
+            <img class="banner__logo banner__logo--mod" src="img/COLOR2.png" style="margin-top: 12rem;" alt="Logo Training">
+            <section class="section-boton section-boton--mod">
+                <h1 class="banner__boton m-0">Elige tu plan de entrenamiento :
+                    <a class="click click--mod" id="click" href="#"></a></h1>
+            </section>
+        </div>
+    </header>
+    <!--==================================
+        MAIN
+    ======================================-->
+    <main class="main-entrenamiento" >
+        <!-- <section class="section-entrenamiento contenedor">
+            <h3>Te acompañamos alcanzar tus metas</h3>
+            <h2>Quiero entrenar por</h2>
+            <div class="box-entrenamiento contenedor">
+                <div class="botones">
+                    <a href="salud-moveon.html" class="btn-entrenamiento btn-entrenamiento--mod">Salud</a>
+                    <p>(Move on)</p>
+                </div>
+                <div class="botones">
+                    <a href="deporte-sport100.html" class="btn-entrenamiento btn-entrenamiento--mod">Deporte</a>
+                    <p>(Sport 100)</p>
+                </div>
+            </div>
+        </section> -->
+        <section class="section-entrenamiento contenedor">
+            <div class="logo-salud animate__animated animate__bounce animate__slow" id="logo-salud">
+                <img class="logo-salud__imagen" src="img/COLOR.png" alt="color">
+            </div>
+            <h3>Potenciamos cada parte de tu cuerpo</h3>
+            <h2>Entrena con deporte sport 100</h2>
+            <div class="box-entrenamiento box-entrenamiento--mod grid">
+                <div class="entrenamiento__imagen contenedor">
+                    <img src="img/foto2.jpg" alt="foto 2">
+                </div>
+                <div class="entrenamiento__contenido contenedor">
+                    <p class="texto">Si tu objetivo es:</p>
+                    <ul >
+                        <li>
+                            <img src="img/christraining-check.svg" class="check" alt="check">
+                            <p class="animado">Objetivo 1</p>
+                        </li>
+                        <li>
+                            <img src="img/christraining-check.svg" class="check" alt="check">
+                            <p class="animado">Objetivo 2</p>
+                        </li>
+                        <li>
+                            <img src="img/christraining-check.svg" class="check" alt="check">
+                            <p class="animado">Objetivo 2</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mensaje">
+                    <p id="sport100"></p><i class='bx bx-run'></i>
+                </div>
+            </div>
+            <div id="objetivo"></div>
+        </section>
+
+        <section class="section-entrenamiento contenedor grid-entrenamiento animado">
+            <h3 class="grid1">podrás trabajar, tonificar y activar correctamente tu core</h3>
+            <h2 class="grid2">Principales fortalezas del plan deporte 100</h2>
+            <div class="box-entrenamiento--mod grid3">
+                <div class="entrenamiento__contenido contenedor">
+                    <ul>
+                        <li>
+                            <img src="img/christraining-check.svg" class="check check--mod" alt="check">
+                            <p>Fortaleza 1</p>
+                        </li>
+                        <li>
+                            <img src="img/christraining-check.svg" class="check check--mod" alt="check">
+                            <p>Fortaleza 2</p>
+                        </li>
+                        <li>
+                            <img src="img/christraining-check.svg" class="check check--mod" alt="check">
+                            <p>Fortaleza 3</p>
+                        </li>
+                        <li>
+                            <img src="img/christraining-check.svg" class="check check--mod" alt="check">
+                            <p>Fortaleza 4</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="video-contenedor grid4 contenedor animado" style="margin-top: 2rem;">
+                <video class="center-video controles" autoplay muted loop controls="controls">
+                    <source
+                        src="https://res.cloudinary.com/juanjoh/video/upload/v1629124105/Christraining/video1_thmzo3.mp4"
+                        type="video/mp4">
+                </video>
+                
+            </div>
+        </section>
+
+        <section style="margin-top: 4rem;">
+            <h3>Entrena tu vida con Christraining! 💯</h3>
+            <h2>Empieza a mejorar a ritmo de sport 100</h2>
+        </section>
+
+        <div class="contenedor-parallax">
+            <div class="fondo-parallax">
+                <p class="contenedor-modalidades__titulo">Modalidades de entrenamiento</p>
+            </div>
+        </div>
+
+        <section class="section-modalidad contenedor animado">
+            <!-- <div class="contenedor-btn">
+                <p class="btn-entrenamiento btn--mod" id="btn-entrenamiento">Quiero entrenar mi salud con move on</p>
+            </div> -->
+            <div class="contenedor-modalidades">
+                <div class="grid-modalidad">
+                    <div class="box-modalidad animado">
+                        <div class="box-modalidad__imagen">
+                            <img src="img/1.jpg" alt="">
+                        </div>
+                        <div class="box-modalidad__titulo">
+                            <p>Presencial</p>
+                        </div>
+                        <div class="box-modalidad__descripcion">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quaerat voluptates
+                            alias facere quisquam, nihil ad deserunt eum id repellat odio, expedita qui, aspernatur aut
+                            illum. Consequuntur accusantium assumenda molestias.
+                            </p>
+                        </div>
+                        <div class="box-modalidad__redes">
+                            <a href="#"><img src="img/facebook.svg" alt="imagen-facebook"></a>
+                            <a href="#"><img src="img/instagram.svg" alt="imagen-instagram"></a>
+                            <a href="#"><img src="img/gmail.svg" alt="imagen-gmail"></a>
+                            <a href="#"><img src="img/smartphone.svg" alt="imagen-smartphone"></a>
+                        </div>
+                        <div class="box-modalidad__enlace">
+                            <a href="#">Contáctanos aquí</a>
+                        </div>
+                    </div><!-- cierre de box-modalidad -->
+                    <div class="box-modalidad animado">
+                        <div class="box-modalidad__imagen">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <div class="box-modalidad__titulo">
+                            <p>Virtual</p>
+                        </div>
+                        <div class="box-modalidad__descripcion">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quaerat voluptates
+                            alias facere quisquam, nihil ad deserunt eum id repellat odio, expedita qui, aspernatur aut
+                            illum. Consequuntur accusantium assumenda molestias.
+                            </p>
+                        </div>
+                        <div class="box-modalidad__redes">
+                            <a href="#"><img src="img/facebook.svg" alt="imagen-facebook"></a>
+                            <a href="#"><img src="img/instagram.svg" alt="imagen-instagram"></a>
+                            <a href="#"><img src="img/gmail.svg" alt="imagen-gmail"></a>
+                            <a href="#"><img src="img/smartphone.svg" alt="imagen-smartphone"></a>
+                        </div>
+                        <div class="box-modalidad__enlace">
+                            <a href="#">Contáctanos aquí</a>
+                        </div>
+                    </div><!-- cierre de box-modalidad -->
+                    <div class="box-modalidad animado">
+                        <div class="box-modalidad__imagen">
+                            <img src="img/3.jpg" alt="">
+                        </div>
+                        <div class="box-modalidad__titulo">
+                            <p>OffLine</p>
+                        </div>
+                        <div class="box-modalidad__descripcion">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quaerat voluptates
+                            alias facere quisquam, nihil ad deserunt eum id repellat odio, expedita qui, aspernatur aut
+                            illum. Consequuntur accusantium assumenda molestias.
+                            </p>
+                        </div>
+                        <div class="box-modalidad__redes">
+                            <a href="#"><img src="img/facebook.svg" alt="imagen-facebook"></a>
+                            <a href="#"><img src="img/instagram.svg" alt="imagen-instagram"></a>
+                            <a href="#"><img src="img/gmail.svg" alt="imagen-gmail"></a>
+                            <a href="#"><img src="img/smartphone.svg" alt="imagen-smartphone"></a>
+                        </div>
+                        <div class="box-modalidad__enlace">
+                            <a href="#">Paga aquí</a>
+                        </div>
+                    </div><!-- cierre de box-modalidad -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================================
+        FOOTER
+    ======================================-->
+    <footer class="footer" style="margin-top: 4rem;">
+        <div class="footer-informe">
+            <div class="fondo-footer">
+                <div class="campos-footer">
+                    <div class="campo-footer contenedor">
+                        <div class="logo-footer">
+                            <a href="index.html"><img src="img/NEGATIVO.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="campo-footer contenedor">
+                        <div class="items-footer">
+                            <ul class="items items--mod">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="nosotros.html">Nosotros</a></li>
+                                <li><a href="entrenamiento.html">Entrenamiento</a></li>
+                                <li><a href="contactenos.html">Contáctenos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="campo-footer contenedor">
+                        <div class="items-footer">
+                            <ul class="items">
+                                <li><i class='bx bxl-facebook-square'></i><a href="#">Christraining Oficial</a></li>
+                                <li><i class='bx bxl-instagram'></i><a href="https://www.instagram.com/christraining0/">@christraining</a></li>
+                                <li><i class='bx bx-envelope'></i><a href="mailto:">Christraining oficial@gmail.com</a></li>
+                                <li><i class='bx bx-phone'></i><a href="tel:+935233669">935 233 669</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="campo-footer contenedor">
+                        <small class="copyrigth">Copyrigth &copy; 2021 Christraining | Diseñado y Desarrollado por: <a
+                                class="autor" href="tel:+953659803">Juan J. Huiza</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="js/app.js"></script>
+    <script src="js/appFijo-nosotros.js"></script>
+    <script src="js/entrenamiento.js"></script>
+</body>
+
+</html>
