@@ -916,11 +916,19 @@ input[type="tel"]{
     padding-bottom: 1rem;
     padding-left: 4rem;
 }
+@media(min-width:420px){
+    .formulario input[type="text"],
+    .input-text__email,
+    input[type="tel"]{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+}
 @media(min-width:576px){
     .formulario input[type="text"],
     .input-text__email,
     input[type="tel"]{
-        font-size: 1.7rem;
+        /* font-size: 1.7rem; */
     }
 }
 .input-icon{
@@ -958,11 +966,17 @@ input[type="tel"]{
     font-weight: 300;
     font-size: 1.45rem;
 }
-@media(min-width:576px){
+@media(min-width:420px){
+    .select-text{
+        font-size: 1.5rem ;
+        text-transform: uppercase;
+    }
+}
+/* @media(min-width:576px){
     .select-text{
         font-size: 1.7rem ;
     }
-}
+} */
 .select-text:hover{
     border-radius: 0.3rem;
     border: 1px solid #0f6fbe2c;
