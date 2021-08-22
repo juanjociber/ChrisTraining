@@ -167,6 +167,7 @@ p{
 /*====================
 -> NAV
 ======================*/
+
 .nav{
     width: 100%;
     display: grid;
@@ -174,6 +175,7 @@ p{
     position: absolute;
     top: 0;
     background-color: var(--bg-secundario);
+    z-index: 5;
 }
 /*====================
 -> LOGO
@@ -232,23 +234,52 @@ p{
 -> BOTÓN MENÚ
 ======================*/
 .menu{
-    grid-column: 3 / 4;
     text-transform: uppercase;
     font-weight: 300;
     color: var(--bg-white);
     background-color: var(--bg-secundario);
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     padding: 1rem;
     cursor: pointer;
-    z-index: 2;
+    z-index: 3;
 }
 .menu i{
     font-size: 3rem;
 }
 @media(min-width:992px){
     .menu{
+        display: none;
+    }
+}
+.btn-cerrar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+    z-index: 6;
+    transform: translateX(100%);    
+}
+.btn-cerrar button{
+    width: 45px;
+    height: 45px;
+    background: rgb(206, 206, 206);
+    box-shadow: inset 0 0 5px rgb(138, 138, 138);
+    border: none;
+    border-radius: 10%;
+}
+.btn-cerrar button i{
+    color: rgba(233, 44, 44, 0.911);
+    font-size: 3.8rem;
+    transition: color .4s, transform .4s;
+}
+.btn-cerrar button:hover i{
+    color: var(--bg-secundario);
+    transform: scale(0.99);
+}
+@media(min-width:992px){
+    .btn-cerrar{
         display: none;
     }
 }
@@ -261,9 +292,10 @@ p{
     height: 100vh;
     background-color: var(--bg-white);
     top: 0;
+    left: -100%;
     box-shadow: inset -8px -5px 11px -5px rgb(0 0 0 / 60%);
-    display: none;
     z-index: 3;
+    transition: left .6s;
 }
 .men li{
     border: 0.5px solid rgba(201, 200, 200, 0.336);
@@ -291,6 +323,31 @@ p{
 .submen li{
     border: none;
     padding-left: 0;
+}
+@media(min-width:480px){
+    .men{
+        width: 87%;
+    }
+}
+@media(min-width:576px){
+    .men{
+        width: 89%;
+    }
+}
+@media(min-width:600px){
+    .men{
+        width: 90%;
+    }
+}
+@media(min-width:768px){
+    .men{
+        width: 92%;
+    }
+}
+@media(min-width:900px){
+    .men{
+        width: 93%;
+    }
 }
 @media(min-width:992px){
     #icoAngulo{
@@ -386,6 +443,7 @@ p{
         font-size: 1.3rem;
     }
 }
+
 /*======================
 -> LOGO-MENU-RESPONSIVE
 ========================*/
@@ -413,7 +471,7 @@ p{
     padding-bottom: 0.5rem 0;
     text-align: center;
     transition: background-color .5s;
-    z-index: 1;
+    /* z-index: 1; */
 }
 .navegacion__mensaje:hover{
     background-color: var(--bg-black-firstChildren-opacity);
@@ -472,7 +530,7 @@ p{
     transform: scale(0.99);
 }
 .menu-active{
-    display: block;
+    left: 0;
 }
 /*==============================
 -> BANNER
@@ -864,7 +922,10 @@ p{
 .campo:nth-child(4),
 .campo:nth-child(5),
 .campo:nth-child(6),
-.campo:nth-child(7){
+.campo:nth-child(7),
+.campo:nth-child(9),
+.campo:nth-child(11),
+.campo:nth-child(13){
     grid-column: 1 / 3;
 }
 
@@ -2218,9 +2279,28 @@ input[type="tel"]{
         grid-column:  1 / 3;
     }
 }
-
-
-
-
+/*===================
+-> CONTÁCTENOS
+=====================*/
+@media(min-width:768px){
+    .form-contactenos{
+        grid-column: 1 / 3;
+    }
+}
+#idMNombre,
+#idMApellido,
+#idMEmail,
+#idMCelular,
+#idMEntrenamiento,
+#idMModalidad,
+#idMFrecuencia{
+    grid-column: 1 / 3;
+    display: none;
+}
+.msj-formulario{
+    color: var(--bg-secundario);
+    text-transform: uppercase;
+    font-size: 2.5vw;
+}
 
 
