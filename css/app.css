@@ -277,6 +277,7 @@ p{
 .btn-cerrar button:hover i{
     color: var(--bg-secundario);
     transform: scale(0.99);
+    cursor: pointer;
 }
 @media(min-width:992px){
     .btn-cerrar{
