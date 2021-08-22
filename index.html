@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/appVideoSlider.css">
     <link rel="stylesheet" href="css/whatsApp.css">
     <link rel="stylesheet" href="css/inicio.css">
+
 </head>
 
 <body>
@@ -41,32 +42,36 @@
     <header class="banner" id="banner">
         <div class="banner-fondo">
             <nav class="nav" id="nav">
-                <div class="logo">
-                    <a href="index.html"><img class="logo__imagen" src="img/NEGATIVO.png" alt="logo"></a>
-                </div>
-                <div class="menu">Menú
-                    <i class='bx bx-menu' id="btnMenu"></i>
-                </div>
-                <ul class="men">
-                    <a href="index.html"><img class="logo-menu-responsive" src="img/COLOR.png" alt="logo"></a>
-                    <li><a href="index.html" class="selected">Inicio</a></li>
-                    <li class="men--mod"><a href="nosotros.html">Nosotros</a>
-                    <li id="men--mod"><a href="#">Entrenamiento</a>
-                        <svg id="icoAngulo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" style="fill: #EE1D3A;">
-                            <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
-                        </svg>
-                        <ul class="submen">
-                            <li><a href="salud-moveon.html">Salud (Move On)</a></li>
-                            <li><a href="deporte-sport100.html">Deporte (Sport 100)</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contactenos.html">Contactenos</a></li>
-                </ul>
-                <div class="navegacion__mensaje" id="navegacion__mensaje">
-                    <p>¿Quieres un plan de entrenamiento gratis? Entra:<a class="click" href="entrenamiento.html">Aquí</a></p>
-                </div>
+                    <div class="menu">
+                        <i class='bx bx-menu' id="btnMenu"></i>Menú
+                    </div>
+                    <div class="logo">
+                        <a href="index.html"><img class="logo__imagen" src="img/NEGATIVO.png" alt="logo"></a>
+                    </div>
+                    <div class="btn-cerrar" id="btn-cerrar">
+                        <button value="cerrar"><i class='bx bx-x'></i></button>
+                    </div>
+                    <ul class="men">
+                            <a href="index.html"><img class="logo-menu-responsive" src="img/COLOR.png" alt="logo"></a>
+                            <li><a href="index.html" class="selected">Inicio</a></li>
+                            <li class="men--mod"><a href="nosotros.html">Nosotros</a>
+                            <li id="men--mod"><a href="#">Entrenamiento</a>
+                                <svg id="icoAngulo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" style="fill: #EE1D3A;">
+                                    <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                                </svg>
+                                <ul class="submen">
+                                    <li><a href="salud-moveon.html">Salud (Move On)</a></li>
+                                    <li><a href="deporte-sport100.html">Deporte (Sport 100)</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contactenos.html">Contactenos</a></li>
+                    </ul>
+                    <div class="navegacion__mensaje" id="navegacion__mensaje">
+                        <p>¿Quieres un plan de entrenamiento gratis? Entra:<a class="click" href="entrenamiento.html">Aquí</a></p>
+                    </div>
             </nav>
+                    
             <div id="fijo"></div>
             <img class="banner__logo" src="img/COLOR2.png" alt="Logo Training">
             <section class="section-boton">
@@ -125,64 +130,73 @@
             <h3>Queremos ayudarte a lograrlo</h3>
             <h2>¡Entrena con nosotros!</h2>
             <div class="contactenos-formulario contenedor">
-                <form class="formulario contenedor animado" name="contacto" method="POST" data-netlify="true"
+                <form class="formulario contenedor animado" onsubmit="return validarFormulario()" name="formulario" method="POST" data-netlify="true"
                     action="/pag">
                     <div class="contenedor-campos">
                         <div class="campo">
                             <div class="input-icon">
-                                <input class="input-text" name="nombre" type="text" placeholder="Nombres" required
+                                <input class="input-text" name="nombre" id="nombre" type="text" placeholder="Nombres"
                                     aria-hidden="true">
                                 <i class='bx bxs-user bx--mod'></i>
                             </div>
                         </div>
+                        <p id="idMNombre"></p>
 
                         <div class="campo">
                             <div class="input-icon">
-                                <input class="input-text" name="apellido" type="text" placeholder="apellidos" required
+                                <input class="input-text" name="apellido" id="apellido" type="text" placeholder="apellidos"
                                     aria-hidden="true">
                                 <i class='bx bxs-user bx--mod'></i>
                             </div>
                         </div>
+                        <p id="idMApellido"></p>
 
                         <div class="campo">
                             <div class="input-icon">
-                                <input class="input-text input-text__email" type="email" name="email"
-                                    placeholder="Email" required aria-hidden="true">
+                                <input class="input-text input-text__email" id="email" type="email" name="email"
+                                    placeholder="Email" aria-hidden="true">
                                 <i class='bx bx-envelope bx--mod'></i>
                             </div>
                         </div>
+                        <p id="idMEmail"></p>
 
                         <div class="campo">
                             <div class="input-icon">
-                                <input class="input-text" type="tel" name="celular" placeholder="Celular" required
+                                <input class="input-text" type="tel" id="celular" name="celular" placeholder="Celular"  
                                     aria-hidden="true">
                                 <i class='bx bx-phone bx--mod'></i>
                             </div>
                         </div>
+                        <p id="idMCelular"></p>
 
                         <div class="campo">
-                            <select name="opciones" id="" class="select-text">
+                            <select name="entrenamiento" id="entrenamiento" class="select-text">
                                 <option disabled selected class="opcion" value="seleccion-entrenamiento">Seleccione plan de entrenamiento</option>
-                                <option class="opcion" value="1">Salud (Move On) </option>
-                                <option class="opcion" value="2">Deportista (Sport 100)</option>
+                                <option class="opcion" value="salud">Salud (Move On) </option>
+                                <option class="opcion" value="deportista">Deportista (Sport 100)</option>
                             </select>
                         </div>
+                        <p id="idMEntrenamiento"></p>
+
                         <div class="campo">
-                            <select name="opciones" id="" class="select-text">
-                                <option class="opcion" disabled selected value="seleccion-modalidad">Seleccione modalidad</option>
-                                <option class="opcion" value="1">Presencial</option>
-                                <option class="opcion" value="2">Virtual</option>
-                                <option class="opcion" value="3">OffLine</option>
+                            <select name="modalidad" id="modalidad" class="select-text">
+                                <option disabled selected class="opcion" value="seleccion-modalidad">Seleccione modalidad</option>
+                                <option class="opcion" value="presencial">Presencial</option>
+                                <option class="opcion" value="virtual">Virtual</option>
+                                <option class="opcion" value="offline">OffLine</option>
                             </select>
                         </div>
+                        <p id="idMModalidad"></p>
+
                         <div class="campo">
-                            <select name="opciones" id="" class="select-text">
-                                <option class="opcion" disabled selected value="seleccion-frecuencia">Seleccione frecuencia</option>
-                                <option class="opcion" value="1">12 sesiones por mes</option>
-                                <option class="opcion" value="2">20 sesiones por mes</option>
-                                <option class="opcion" value="2">24 sesiones por mes</option>
+                            <select name="frecuencia" id="frecuencia" class="select-text">
+                                <option disabled selected class="opcion" value="seleccion-frecuencia">Seleccione frecuencia</option>
+                                <option class="opcion" value="12-sesiones">12 sesiones por mes</option>
+                                <option class="opcion" value="20-sesiones">20 sesiones por mes</option>
+                                <option class="opcion" value="24-sesiones">24 sesiones por mes</option>
                             </select>
                         </div>
+                        <p id="idMFrecuencia"></p>
                     </div>
 
                     <div class="boton-formulario">
@@ -201,6 +215,10 @@
             <ul class="carusel-contenedor contenedor"><!--carusel desarrollado en js--></ul>
         </section>
     </main>
+
+    <a href="#" id="show-modal">Mostrar modal</a>
+
+
     <!--==================================
         FOOTER
     ======================================-->
