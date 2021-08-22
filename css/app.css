@@ -916,7 +916,7 @@ input[type="tel"]{
     padding-bottom: 1rem;
     padding-left: 4rem;
 }
-@media(min-width:420px){
+@media(min-width:384px){
     .formulario input[type="text"],
     .input-text__email,
     input[type="tel"]{
@@ -924,7 +924,7 @@ input[type="tel"]{
         text-transform: uppercase;
     }
 }
-@media(min-width:576px){
+@media(min-width:384px){
     .formulario input[type="text"],
     .input-text__email,
     input[type="tel"]{
@@ -966,7 +966,7 @@ input[type="tel"]{
     font-weight: 300;
     font-size: 1.45rem;
 }
-@media(min-width:420px){
+@media(min-width:384px){
     .select-text{
         font-size: 1.5rem ;
         text-transform: uppercase;
