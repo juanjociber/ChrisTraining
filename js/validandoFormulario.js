@@ -29,7 +29,7 @@
         const $mail = document.querySelector('#idMEmail')
         $mail.classList.add('msj-formulario')
         mostrarMensaje($mail)
-        $mail.innerHTML='El campo es obligatorio y solo texto'
+        $mail.innerHTML='El campo es obligatorio y formato establecido'
         removeMensaje($mail)
         document.querySelector("#email").focus();
         return false;
