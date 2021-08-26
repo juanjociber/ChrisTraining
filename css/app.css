@@ -509,7 +509,7 @@ p{
     /* z-index: 1; */
 }
 .navegacion__mensaje:hover{
-    background-color: var(--bg-black-firstChildren-opacity);
+    background-color: #3b3b3b;
 }
 .navegacion__mensaje p{
     font-weight: 300;
@@ -530,10 +530,6 @@ p{
         grid-row: 1 / 2;
         background-color: var(--bg-black-firstChildren);
         display: block;
-        transition: background-color .6s;
-    }
-    .navegacion__mensaje:hover{
-        background-color: var(--bg-black-firstChildren-opacity);
     }
 }
 .click{
@@ -1092,26 +1088,25 @@ input[type="tel"]{
     color: var(--bg-white);
     position: absolute;
     font-size: 2rem;
-    left: 32%;
+    left: 34.5%;
     top: 25%;
     transform: rotate(-46deg);
 }
-@media(min-width:576px){
-    .bx-send{
-        left: 39.5%;
-    }
-}
-@media(min-width:992px){
-    .bx-send{
-        left: 41.5%;
-    }
-}
-@media(min-width:1200px){
+@media(min-width:480px){
     .bx-send{
         left: 37%;
     }
 }
-
+@media(min-width:576px){
+    .bx-send{
+        left: 39%;
+    }
+}
+@media(min-width:768px){
+    .bx-send{
+        left: 37%;
+    }
+}
 /* -> SECTION-MAIN 5 :CAROUSEL */
 .carusel-contenedor{
     margin: 2rem auto;
@@ -1375,42 +1370,46 @@ input[type="tel"]{
 -> PÁGINA: NOSOTROS
 =============================*/
 .banner--mod{
-    height: 21vw;
-
+    height: 9rem;
 }
-@media(min-width:338px){
+@media(min-width:340px){
     .banner--mod{
-        height: 19.5vw;
+        height: 9.5rem;
+    }
+}
+@media(min-width:380px){
+    .banner--mod{
+        height: 10rem;
     }
 }
 @media(min-width:400px){
     .banner--mod{
-        height: 19vw;
+        height: 10.4rem;
     }
 }
-@media(min-width:450px){
+@media(min-width:430px){
     .banner--mod{
-        height: 18.5vw;
+        height: 10.7rem;
     }
 }
 @media(min-width:480px){
     .banner--mod{
-        height: 18vw;
+        height: 11rem;
     }
 }
 @media(min-width:500px){
     .banner--mod{
-        height: 9rem;
+        height: 11.5rem;
     }
 }
-@media(min-width:530px){
+@media(min-width:540px){
     .banner--mod{
-        height: 9.3rem;
+        height: 12rem;
     }
 }
 @media(min-width:576px){
     .banner--mod{
-        height: 8.9rem;
+        height: 11.5rem;
     }
 }
 .banner__logo--mod,.section-boton--mod{
@@ -2340,5 +2339,34 @@ input[type="tel"]{
         margin: 1rem 0;
     }
 }
-
-
+/*=====================
+-> ESTILO TEMPORIZADOR
+=======================*/
+.temporizador{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+}
+@media(min-width:768px){
+    .temporizador span{
+        font-size: 1.7rem;
+    }
+}
+@media(min-width:992px){
+    .navegacion__mensaje--mod p,
+    .navegacion__mensaje--mod .temporizador{
+        display: inline-block;
+    }
+    .flex-temporizador{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .temporizador{
+        margin-left: 1rem;
+    }
+    .temporizador::before{
+        content: "|";
+        margin-right: 1rem;
+    }
+}
