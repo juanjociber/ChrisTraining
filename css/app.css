@@ -1370,46 +1370,76 @@ input[type="tel"]{
 -> PÁGINA: NOSOTROS
 =============================*/
 .banner--mod{
-    height: 9rem;
+    height: 8.8rem;
 }
 @media(min-width:340px){
     .banner--mod{
-        height: 9.5rem;
+        height: 8.88rem;
+    }
+}
+@media(min-width:350px){
+    .banner--mod{
+        height: 8.9rem;
     }
 }
 @media(min-width:380px){
     .banner--mod{
-        height: 10rem;
+        height: 9.2rem;
     }
 }
 @media(min-width:400px){
     .banner--mod{
-        height: 10.4rem;
+        height: 9.5rem;
+    }
+}
+@media(min-width:410px){
+    .banner--mod{
+        height: 9.8rem;
     }
 }
 @media(min-width:430px){
     .banner--mod{
-        height: 10.7rem;
+        height: 10rem;
+    }
+}
+@media(min-width:440px){
+    .banner--mod{
+        height: 10.2rem;
+    }
+}
+@media(min-width:460px){
+    .banner--mod{
+        height: 10.5rem;
     }
 }
 @media(min-width:480px){
     .banner--mod{
-        height: 11rem;
+        height: 10.6rem;
     }
 }
 @media(min-width:500px){
     .banner--mod{
-        height: 11.5rem;
+        height: 10.8rem;
     }
 }
-@media(min-width:540px){
+@media(min-width:520px){
     .banner--mod{
-        height: 12rem;
+        height: 11rem;
+    }
+}
+@media(min-width:530px){
+    .banner--mod{
+        height: 11.2rem;
+    }
+}
+@media(min-width:570px){
+    .banner--mod{
+        height: 11.5rem;
     }
 }
 @media(min-width:576px){
     .banner--mod{
-        height: 11.5rem;
+        height: 10.8rem;
     }
 }
 .banner__logo--mod,.section-boton--mod{
@@ -2342,8 +2372,8 @@ input[type="tel"]{
 /*=====================
 -> ESTILO TEMPORIZADOR
 =======================*/
-.temporizador{
-    font-size: 1.4rem;
+.temporizador span{
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 0.5rem 0;
 }
