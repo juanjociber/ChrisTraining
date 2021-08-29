@@ -242,73 +242,76 @@ printModal(``) //-> Muestra modal cuando carga la página
 // countdown('Aug 27 2021 09:42:18 GMT-0500','clock','Feliz 2020')
 
 
+/**==================================
+->  CONTADOR DE TIEMPO
+ ====================================*/
+// let horas = 7,
+//     minutos = 0,
+//     segundos = 0;
+//     //Definiendo y ejecutando segundos
+//     function cargarSegundos(){
+//         let txtSegundos;
+//         if(segundos < 0){
+//             segundos = 59;
+//         }
+//         //Mostrar segundos en pantalla
+//         if(segundos < 10){
+//             txtSegundos = `0${segundos}`;
+//         }else{
+//             txtSegundos = segundos;
+//         }
+//         document.querySelector('#segundos').innerHTML = txtSegundos+"s";
+//         segundos--;
 
-let horas = 7,
-    minutos = 0,
-    segundos = 0;
-    //Definiendo y ejecutando segundos
-    function cargarSegundos(){
-        let txtSegundos;
-        if(segundos < 0){
-            segundos = 59;
-        }
-        //Mostrar segundos en pantalla
-        if(segundos < 10){
-            txtSegundos = `0${segundos}`;
-        }else{
-            txtSegundos = segundos;
-        }
-        document.querySelector('#segundos').innerHTML = txtSegundos+"s";
-        segundos--;
-
-        cargarMinutos(segundos)
-    }
-    //Definiendo y ejecutando los minutos
-    function cargarMinutos(segundos){
-        let txtMinutos;
-        if(segundos == -1 && minutos !== 0){
-            setTimeout(()=>{
-                minutos--;
-            },500)
-        }else if(segundos == -1 && minutos == 0){
-            setTimeout(()=>{
-                minutos = 59;
-            },500)
-        }
-        //Mostrar minutos en pantalla
-        if(minutos < 10){
-            txtMinutos = `0${minutos}`;
-        }else{
-            txtMinutos = minutos;
-        }
-        document.querySelector('#minutos').innerHTML = txtMinutos+"m"
-        cargarHoras(segundos,minutos)
-    }
-    //Definiendo y ejecutamos las horas
-    function cargarHoras(segundos,minutos){
-        let txtHoras;
-        if(segundos == -1 && minutos == 0 && horas !==0){
-            setTimeout(()=>{
-                horas--;
-            },500)
-        }else if(segundos == -1 && minutos == 0 && horas == 0){
-            setTimeout(() => {
-                horas = 2;
-            }, 500);
-        }
-        //Mostrar horas en pantalla
-        if(horas < 10){
-            txtHoras = `0${horas}`;
-        }else{
-            txtHoras = horas;
-        }
-        document.querySelector('#horas').innerHTML = txtHoras+"h";
-    }
-    //Ejecutamos cada segundo
-    setInterval(cargarSegundos, 1000);
+//         cargarMinutos(segundos)
+//     }
+//     //Definiendo y ejecutando los minutos
+//     function cargarMinutos(segundos){
+//         let txtMinutos;
+//         if(segundos == -1 && minutos !== 0){
+//             setTimeout(()=>{
+//                 minutos--;
+//             },500)
+//         }else if(segundos == -1 && minutos == 0){
+//             setTimeout(()=>{
+//                 minutos = 59;
+//             },500)
+//         }
+//         //Mostrar minutos en pantalla
+//         if(minutos < 10){
+//             txtMinutos = `0${minutos}`;
+//         }else{
+//             txtMinutos = minutos;
+//         }
+//         document.querySelector('#minutos').innerHTML = txtMinutos+"m"
+//         cargarHoras(segundos,minutos)
+//     }
+//     //Definiendo y ejecutamos las horas
+//     function cargarHoras(segundos,minutos){
+//         let txtHoras;
+//         if(segundos == -1 && minutos == 0 && horas !==0){
+//             setTimeout(()=>{
+//                 horas--;
+//             },500)
+//         }else if(segundos == -1 && minutos == 0 && horas == 0){
+//             setTimeout(() => {
+//                 horas = 2;
+//             }, 500);
+//         }
+//         //Mostrar horas en pantalla
+//         if(horas < 10){
+//             txtHoras = `0${horas}`;
+//         }else{
+//             txtHoras = horas;
+//         }
+//         document.querySelector('#horas').innerHTML = txtHoras+"h";
+//     }
+//     //Ejecutamos cada segundo
+//     setInterval(cargarSegundos, 1000);
 
 
-
-
+    //Agregando 'id' a elemento button de btn-pago mercado-pago
     const mercadopagoButton = document.querySelector('.mercadopago-button')
-    mercadopagoButton.id='btnPago'
+    mercadopagoButton.id='btnPago';
+
+
