@@ -254,15 +254,17 @@
                             <a href="tel:+935233669"><img src="img/smartphone.svg" alt="imagen-smartphone"></a>
                         </div>
                         <div class="box-modalidad__enlace">
-                            <a href="#">Paga aquí</a>
-                        </div>
+                            <!-- <a href="#">Paga aquí</a> -->
+                            <script src="https://www.mercadopago.com.pe/integrations/v1/web-payment-checkout.js"
+                                data-preference-id="548492679-a0023ca6-6528-473e-852c-4c22ab3d6dec" data-source="button">
+                            </script>
                     </div><!-- cierre de box-modalidad -->
                 </div>
             </div>
         </section>
     </main>
 
-    <script data-reference-id="f40f9d78-27ab-4f7f-9073-c686f742ddd5">const s=document.createElement("script");s.src="https://static.directopago.com/directopago.min.js",s.async=!0,document.body.appendChild(s),s.addEventListener("load",()=>{const e=document.querySelector('script[data-reference-id="f40f9d78-27ab-4f7f-9073-c686f742ddd5"]'),t=e.parentNode,n="dp-btn-f40f9d78-27ab-4f7f-9073-c686f742ddd5",c=document.createElement("div");c.id=n,t.insertBefore(c,e);new DirectoPago("jARTVAzgnHasYLUySufPTFqstKLvFHWd").createCheckout(n,{country:"PE",currency:"PEN",amount:"15",lang:"es",text:""})});</script>
+    
     
     
     <!--==================================
