@@ -253,7 +253,26 @@
                             <a href="tel:+935233669"><img src="img/smartphone.svg" alt="imagen-smartphone"></a>
                         </div>
                         <div class="box-modalidad__enlace">
-                            <a href="#">Paga aquí</a>
+                            <!-- <a href="#">Paga aquí</a> -->
+                            <script data-reference-id="f40f9d78-27ab-4f7f-9073-c686f742ddd5">
+                                const s=document.createElement("script");
+                                      s.src="https://static.directopago.com/directopago.min.js",
+                                      s.async=!0,document.body.appendChild(s),
+                                      s.addEventListener("load",()=>{
+                                          const e=document.querySelector('script[data-reference-id="f40f9d78-27ab-4f7f-9073-c686f742ddd5"]'),
+                                                t=e.parentNode,n="dp-btn-f40f9d78-27ab-4f7f-9073-c686f742ddd5",
+                                                c=document.createElement("div");
+                                                c.id=n,
+                                                t.insertBefore(c,e);
+                                                new DirectoPago("jARTVAzgnHasYLUySufPTFqstKLvFHWd").createCheckout(n,{
+                                                    country:"PE",
+                                                    currency:"PEN",
+                                                    amount:"15",
+                                                    lang:"es",
+                                                    text:"Pagar Aquí"
+                                                })
+                                    });
+                            </script>
                         </div>
                     </div><!-- cierre de box-modalidad -->
                 </div>

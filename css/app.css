@@ -2400,3 +2400,37 @@ input[type="tel"]{
         margin-right: 1rem;
     }
 }
+
+/*=================================
+-> Botón de pago
+===================================*/
+#dp-btn-f40f9d78-27ab-4f7f-9073-c686f742ddd5 button{
+    width: 100%;
+    background: #6D6D6D;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    color: #ffffffb4;
+    font-weight: 300;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: inset -1px -5px 20px -5px rgb(0 0 0 / 50%);
+    /* border: 1px solid red; */
+}
+#dp-btn-f40f9d78-27ab-4f7f-9073-c686f742ddd5 button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    transition: background-color 900ms, transform 1s,
+}
+#dp-btn-f40f9d78-27ab-4f7f-9073-c686f742ddd5 button:hover{
+    animation: shadow-pulse 1500ms 1;
+    background: #FF3753;
+    transform: scale(0.98);
+    color: var(--bg-white);
+    font-weight: 600;
+    transform: scale(1.01);
+    opacity: 0.9;
+}
