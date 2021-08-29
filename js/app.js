@@ -310,3 +310,5 @@ let horas = 7,
 
 
 
+    const mercadopagoButton = document.querySelector('.mercadopago-button')
+    mercadopagoButton.id='btnPago'
