@@ -1,3 +1,4 @@
+
 /**================================================
  -> CONTROL DE MENÚ RESPONSIVE
  * ================================================
@@ -95,7 +96,7 @@ function viewAqui(){
    let printCadena
    const observando= new IntersectionObserver(function(e){
        if(e[0].isIntersecting){
-           console.log('Ingreso de evento');
+        //    console.log('Ingreso de evento');
            let escritura = str =>{
                 let arrayStr = str.split('');
                 let i = 0;
@@ -117,7 +118,7 @@ function viewAqui(){
            escritura('Aquí');
        }
        else{
-           console.log('Salida de evento')
+        //    console.log('Salida de evento')
            clearInterval(printCadena)
            $click.innerHTML= ""
        }
@@ -309,9 +310,5 @@ printModal(``) //-> Muestra modal cuando carga la página
 //     //Ejecutamos cada segundo
 //     setInterval(cargarSegundos, 1000);
 
-
-    //Agregando 'id' a elemento button de btn-pago mercado-pago
-    const mercadopagoButton = document.querySelector('.mercadopago-button')
-    mercadopagoButton.id='btnPago';
 
 

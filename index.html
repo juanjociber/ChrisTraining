@@ -40,6 +40,8 @@
         HEADER
     ======================================-->
     <header class="banner" id="banner">
+        
+
         <div class="banner-fondo">
             <nav class="nav" id="nav">
                     <div class="menu">
@@ -101,16 +103,23 @@
     <!--==================================
         MAIN
     ======================================-->
+    <!-- <div class="conten"> -->
+        <div class="search">
+            <input type="text" id="busqueda" placeholder="¿Qué deseas saber?">
+            <i class='bx bx-search'></i>
+        </div>
+    
     <main class="main contenedor">
+
         <section class="section-main section-plan">
             <!-- <h3>Especialistas en training</h3> -->
-            <h2>Conoce nuestros planes</h2>
+            <h2 class="filtrado">Conoce nuestros planes</h2>
             <!-- Planes desarrollado en js -->
         </section>
 
         <section class="section-entrena animado">
             <!-- <h3>Siempre se puede ser mejor</h3> -->
-            <h2>Entrena tu vida</h2>
+            <h2 class="filtrado">Entrena tu vida</h2>
             <div class="box__contenido contenedor">
                 <p>¿Quiénes somos?</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt laboriosam quae
@@ -130,13 +139,13 @@
 
         <section class="section-main animado contenedor " id="testimonio">
             <!-- <h3>Te brindamos un servicio destacado</h3> -->
-            <h2>Testimonios</h2>
+            <h2 class="filtrado">Testimonios</h2>
             <div class="container-sliderTestimonio"><!-- Testimonio desarrollado en js --></div>
         </section>
 
         <section class="section-main animado">
             <!-- <h3>Queremos ayudarte a lograrlo</h3> -->
-            <h2>¡Entrena con nosotros!</h2>
+            <h2 class="filtrado">¡Entrena con nosotros!</h2>
             <div class="contactenos-formulario contenedor">
                 <form class="formulario contenedor animado" onsubmit="return validarFormulario()" name="formulario" method="POST" data-netlify="true"
                     action="/pag">
@@ -219,11 +228,12 @@
 
         <section class="section-main animado">
             <!-- <h3>No lo llames sueño, llámalo plan</h3> -->
-            <h2>Síguenos en <span>@Christraining</span></h2>
+            <h2 class="filtrado">Síguenos en <span>@Christraining</span></h2>
             <ul class="carusel-contenedor contenedor"><!--carusel desarrollado en js--></ul>
         </section>
     </main>
     
+    <!-- </div> -->
     <!--==================================
         FOOTER
     ======================================-->
@@ -268,6 +278,7 @@
 </body>
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- JS -->
 <script src="js/app.js"></script>
 <script src="js/appFijo.js"></script>
@@ -276,5 +287,6 @@
 <script src="js/testimonios-index.js"></script>
 <script src="js/planes.js"></script>
 <script src="js/validandoFormulario.js"></script>
-
+<script src="js/modulos.js" type="module"></script>
+<script src="js/filtro-busqueda.js"></script>
 </html>
