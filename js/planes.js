@@ -15,7 +15,7 @@ const $sectionPlan= document.querySelector('.section-plan')
 
 let planesArray = Object.entries(planes);
 planesArray.forEach(element => {
-    console.log(element[1])
+    // console.log(element[1])
     const $articlePlan = document.createElement('ARTICLE')
     const $figurePlan = document.createElement('FIGURE')
     const $divPlan = document.createElement('DIV')

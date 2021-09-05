@@ -21,7 +21,7 @@ $ul.id ='navegacion'
 -> BUCLE:
 ==================*/
 imagenes.forEach(function(e){ 
-    console.log(e)
+    // console.log(e)
     const imagen = e
     const $li = document.createElement('LI') 
     const $img = document.createElement('IMG')

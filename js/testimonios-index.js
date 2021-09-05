@@ -51,7 +51,7 @@ $containerTestimonio.appendChild($sliderTestBtnRigth)
 $containerTestimonio.appendChild($sliderTestBtnLeft)
 
 testimonioArray.forEach(function(e){
-    console.log(e[1])
+    // console.log(e[1])
     const $sliderSection = document.createElement('DIV')
     const $imgSlider = document.createElement('IMG')
     const $sliderContenido = document.createElement('DIV')
