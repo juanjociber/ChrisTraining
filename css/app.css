@@ -2501,50 +2501,66 @@ input[type="tel"]{
 /*=================================
 -> Buscador
 ===================================*/
-.content {
-	margin-top: 60px;
-}
-.search {
-	max-width: 180px;
-	margin: 0 auto;
-    position: absolute;
-    top: 15px;
-    right: 15px;
+.search{
+	width: 80%;
+    margin: 0 auto;
+    position: fixed;
+    top: 2.5vw;
+    left: 10%;
     z-index: 5;
-    
-	/* position: relative; */
+	display: flex;
+    align-items: center;
 }
-.search input {
-	width: 180px;
-    padding: 8px 5px;
-    border: 1px solid #cecece;
-    border-radius: 3px;
-    background: var(--bg-white);
-    outline: unset;
-}
-.search i{
+.search #lupa{
 	position: absolute;
     cursor: pointer;
-    right: 5px;
-    /* top: 9px; */
-    font-size: 20px;
-    color: #868686;
-    z-index: 5;
+    right: 0;
+    top: 4px;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    z-index: 50;
+    text-shadow: 0.5px 0 0 rgb(59, 59, 59), 
+                 -0.5px 0 0 rgb(59, 59, 59), 
+                 0 -0.5px 0 rgb(59, 59, 59), 
+                 0 0.5px 0 rgb(59, 59, 59), 
+                 0 0 5px rgba(73, 73, 73, 0.685);
 }
 #busqueda{
+    visibility: hidden;
     font-weight: 300;
+    padding:8px 20px;
     color: #757575;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(68, 68, 68, 0.288);
+    
 }
-/* ul {
-	padding: 0px;
-	margin-top: 40px;
+#busqueda:hover{
+    box-shadow: 0px 10px 13px -7px #181818, 5px 5px 15px 5px rgba(0,0,0,0);
 }
-ul li {
-	list-style-type: none;
-	float: left;
-	border: 1px solid #cecece;
-	padding: 10px;
-	margin: 10px;
-	width: 347px;
-} */
-
+#cerrarLupa{
+    visibility: hidden;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 0 5px;
+    color: white;
+    background: none;
+    border: none;
+    text-shadow: 0.5px 0 0 rgb(59, 59, 59), 
+                 -0.5px 0 0 rgb(59, 59, 59), 
+                 0 -0.5px 0 rgb(59, 59, 59), 
+                 0 0.5px 0 rgb(59, 59, 59), 
+                 0 0 5px rgba(73, 73, 73, 0.685);
+}
+@media(min-width:482px){
+    .search{
+        top: 15px;
+    }
+}
+@media(min-width:576px){
+    .search #lupa{
+        top:5.5px
+    }
+}

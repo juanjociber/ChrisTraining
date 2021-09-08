@@ -46,7 +46,9 @@ window.addEventListener('click',function(e){
  */
 const icoAngulo = document.querySelector('#icoAngulo')
 const subMenu = document.querySelector('.submen')
+const btnEntrenamiento = document.querySelector('#men--mod')
 let mqMax767 = window.matchMedia('(max-width:767px)')
+
 conta = 1    
 
 function mqSubmenu(mqMax767){
@@ -60,7 +62,7 @@ function mqSubmenu(mqMax767){
 mqSubmenu(mqMax767)
 mqMax767.addListener(mqSubmenu)
 
-icoAngulo.addEventListener('click',function(){
+btnEntrenamiento.addEventListener('click',function(e){
     if(conta == 1){
         subMenu.style.display='block'
         icoAngulo.setAttribute('transform','rotate(180)')
