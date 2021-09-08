@@ -10,11 +10,14 @@ $(document).ready(function(){
             //seleccionando clases con elemento 'i'
             var clase = $('.search i');
             if($(busqueda).val() != ''){
-                $(clase).attr('class', 'bx bx-x');
+                $(clase).attr('class', 'bx bx-eraser');
+                $(clase).css('font-size', '22px');
+                $(clase).css('font-weight', '300');
+                $(clase).css('margin-top', '1px');
             }else{
                 $(clase).attr('class', 'bx bx-search');
             }
-            if($(clase).hasClass('bx bx-x')){
+            if($(clase).hasClass('bx bx-eraser')){
                 $(clase).click(function(){
                     //borramos el contenido del input
                     $(busqueda).val('');
@@ -47,7 +50,8 @@ $lupa.addEventListener('click',function(e){
     contador = 1;
     if(contador == 1){
         $input.style='visibility:visible;width:100%;transition:all .6s;outline: unset;border-radius:10px'
-        $lupa.style='right: 40px; color:#757575; text-shadow:none; top:5px'
+        $lupa.style='right: 40px; color:#b5b5b5; text-shadow:none; top:10px; font-size:22px'
+        $search.style='left:10%; transition:.5s'
         $cerrarLupa.style='visibility:visible'
         contador = 0
     }else{
@@ -60,8 +64,9 @@ $cerrarLupa.addEventListener('click',function(){
         $input.style='visibility:hidden; transition:all .1s'
         $input.innerHTML=''
         $cerrarLupa.style='visibility:hidden'
-        $lupa.style='right:0'
+        $search.style='left:18%; transition:.5s'
         $lupa.setAttribute('class','bx bx-search')
+        $lupa.style='color:white'
         contador = 1
     }
     else{
