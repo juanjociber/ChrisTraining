@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     MenuResponsive();        
 })
 function MenuResponsive(){
+    $lupa = document.querySelector('#lupa')
     let menu = document.querySelector('#btnMenu')
     menuContent = document.querySelector('.men')
     cerrar = document.querySelector('#btn-cerrar')
@@ -19,13 +20,13 @@ function MenuResponsive(){
             menuContent.style='transition: all .6s'
             cerrar.style='transform: translateX(0%); transition: all .5s'
             cerrar.style.background= 'rgba(0, 0, 0, 0.5)'
-            cerrar.style.zIndex= '1'
+            cerrar.style.zIndex= '3'
+            $lupa.style= 'transform: translateY(-40px)'
             contador = 0
         }
         else{
             contador = 1
             menuContent.classList.remove('menu-active')
-            
         }
     })
 };
@@ -37,6 +38,7 @@ window.addEventListener('click',function(e){
         nav.style.background= '#FF3753'
         menuContent.classList.remove('menu-active')
         cerrar.style='transform: translateX(100%); transition: all .5s'
+        $lupa.style= 'display:block; transition:.6s'
     }
 });
 
