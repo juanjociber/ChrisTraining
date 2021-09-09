@@ -532,6 +532,7 @@ p{
 @media(min-width:992px){
     .navegacion__mensaje{
         width: 100%;
+        padding: 5px 0;
         border: none;
         grid-row: 1 / 2;
         background-color: var(--bg-black-firstChildren);
@@ -659,6 +660,7 @@ p{
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     z-index: 1500;
 }
+
 @media(min-width:992px){
     .fijo .logo{
         background-color: #ff3752e7;
@@ -2225,11 +2227,11 @@ input[type="tel"]{
     font-weight: 900;
     font-size: 1.7rem;
     transition: color .5s;
-    text-shadow: 0.5px 0 0 rgb(97, 97, 97), 
+    /* text-shadow: 0.5px 0 0 rgb(97, 97, 97), 
                  -0.5px 0 0 rgb(104, 104, 104), 
                  0 -0.5px 0 rgb(95, 95, 95), 
                  0 0.5px 0 rgb(88, 88, 88), 
-                 0 0 5px rgba(102, 102, 102, 0.685);
+                 0 0 5px rgba(102, 102, 102, 0.685); */
 }
 .box-modalidad:hover .box-modalidad__titulo p{
     color: var(--bg-secundario);
@@ -2565,7 +2567,7 @@ input[type="tel"]{
 }
 @media(min-width:400px){
     .search{
-        transform: translateX(360px);
+        transform: translateX(350px);
     }
 }
 @media(min-width:420px){
@@ -2661,10 +2663,11 @@ input[type="tel"]{
 }
 @media(min-width:992px){
     .search{
-        top: 25px;
+        top: 35px;
         transform: translateX(81vw);
     }
 }
+
 @media(min-width:1060px){
     .search{
         transform: translateX(79.5vw);
@@ -2678,5 +2681,22 @@ input[type="tel"]{
 @media(min-width:1300px){
     .search{
         transform: translateX(75vw);
+    }
+}
+.fijoBuscador{
+    position: fixed !important;
+    top: 1% !important;
+    z-index: 4000 !important;
+}
+.fijoBuscador .search{
+    position: absolute;
+    top: 0;
+}
+
+@media(min-width:992px){
+    .fijoBuscador{
+        margin-top: 39px;
+        /* transform: translateX(89vw) !important; */
+        color: yellow !important;
     }
 }
