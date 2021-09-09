@@ -77,7 +77,7 @@ function eventoSearch(){
             $input.style='visibility:hidden; transition:all .1s'
             $input.innerHTML=''
             $cerrarLupa.style='visibility:hidden'
-            $search.style='left:10%; transition:.5s'
+            $search.style='width:0%; left:10%; transition:.5s'
             // $lupa.setAttribute('class','bx bx-search')
             $lupa.style='color:white'
             contador = 1
