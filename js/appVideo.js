@@ -28,6 +28,7 @@ imagenes.forEach(function(e){
     
     $li.dataset.id=e
     $img.setAttribute('src',imagen)
+    $img.setAttribute('Alt', 'ImagenVideoSlider')
    
     $slider.appendChild($ul)
     $ul.appendChild($li)
