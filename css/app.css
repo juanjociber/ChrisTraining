@@ -2220,10 +2220,16 @@ input[type="tel"]{
 .box-modalidad__titulo p{
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 2px;
     padding: 1rem 0;
     font-weight: 900;
     font-size: 1.7rem;
     transition: color .5s;
+    text-shadow: 0.5px 0 0 rgb(97, 97, 97), 
+                 -0.5px 0 0 rgb(104, 104, 104), 
+                 0 -0.5px 0 rgb(95, 95, 95), 
+                 0 0.5px 0 rgb(88, 88, 88), 
+                 0 0 5px rgba(102, 102, 102, 0.685);
 }
 .box-modalidad:hover .box-modalidad__titulo p{
     color: var(--bg-secundario);
@@ -2262,9 +2268,9 @@ input[type="tel"]{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #6D6D6D;
+    background: var(--bg-primario);
     text-transform: uppercase;
-    color: #ffffffb4;
+    color: white;
     font-weight: 300;
     font-size: 1.5rem;
     border-radius: 0.5rem;
@@ -2471,10 +2477,10 @@ input[type="tel"]{
 ===================================*/
 #btnPago{
     width: 100%;
-    background: #6D6D6D;
+    background: var(--bg-primario);
     text-transform: uppercase;
     padding: 0.5rem 0;
-    color: #ffffffb4;
+    color: white;
     font-weight: 300;
     font-size: 1.5rem;
     border-radius: 0.5rem;
@@ -2502,14 +2508,15 @@ input[type="tel"]{
 -> Buscador
 ===================================*/
 .search{
-	width: 80%;
+	width: 0;
     margin: 0 auto;
-    position: fixed;
-    top:1.6vw;
-    left: 18%;
+    position: absolute;
+    top:2vw;
+    left: 10%;
     z-index: 5;
 	display: flex;
     align-items: center;
+    transform: translateX(330px);
 }
 .search #lupa{
 	position: absolute;
@@ -2558,28 +2565,118 @@ input[type="tel"]{
 }
 @media(min-width:400px){
     .search{
-        top: 1.9vw;
+        transform: translateX(360px);
     }
 }
-@media(min-width:482px){
+@media(min-width:420px){
     .search{
-        top: 15px;
+        transform: translateX(370px);
+    }
+}
+@media(min-width:440px){
+    .search{
+        transform: translateX(385px);
+    }
+}
+@media(min-width:480px){
+    .search{
+        transform: translateX(420px);
+    }
+}
+@media(min-width:500px){
+    .search{
+        transform: translateX(440px);
+    }
+}
+@media(min-width:520px){
+    .search{
+        transform: translateX(475px);
     }
 }
 @media(min-width:576px){
-    .search #lupa{
-        top:5.5px
+    .search{
+        transform: translateX(510px);
+    }
+}
+@media(min-width:600px){
+    .search{
+        transform: translateX(530px);
+    }
+}
+@media(min-width:640px){
+    .search{
+        transform: translateX(570px);
+    }
+}
+@media(min-width:680px){
+    .search{
+        transform: translateX(600px);
+    }
+}
+@media(min-width:720px){
+    .search{
+        transform: translateX(640px);
     }
 }
 @media(min-width:768px){
     .search{
         top: 10px;
+        transform: translateX(680px);
     }
     #busqueda{
         font-size: 1.7rem;
+        font-weight: 300;
+    }
+    .search #lupa{
+        top: 12px !important;
     }
     #cerrarLupa{
         font-size: 4rem;
     }
-
+}
+@media(min-width:800px){
+    .search{
+        transform: translateX(700px);
+    }
+}
+@media(min-width:840px){
+    .search{
+        transform: translateX(750px);
+    }
+}
+@media(min-width:900px){
+    .search{
+        transform: translateX(800px);
+    }
+}
+@media(min-width:950px){
+    .search{
+        transform: translateX(845px);
+    }
+}
+@media(min-width:970px){
+    .search{
+        transform: translateX(860px);
+    }
+}
+@media(min-width:992px){
+    .search{
+        top: 25px;
+        transform: translateX(81vw);
+    }
+}
+@media(min-width:1060px){
+    .search{
+        transform: translateX(79.5vw);
+    }
+}
+@media(min-width:1200px){
+    .search{
+        transform: translateX(77vw);
+    }
+}
+@media(min-width:1300px){
+    .search{
+        transform: translateX(75vw);
+    }
 }
