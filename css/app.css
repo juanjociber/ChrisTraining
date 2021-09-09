@@ -2227,11 +2227,6 @@ input[type="tel"]{
     font-weight: 900;
     font-size: 1.7rem;
     transition: color .5s;
-    /* text-shadow: 0.5px 0 0 rgb(97, 97, 97), 
-                 -0.5px 0 0 rgb(104, 104, 104), 
-                 0 -0.5px 0 rgb(95, 95, 95), 
-                 0 0.5px 0 rgb(88, 88, 88), 
-                 0 0 5px rgba(102, 102, 102, 0.685); */
 }
 .box-modalidad:hover .box-modalidad__titulo p{
     color: var(--bg-secundario);
